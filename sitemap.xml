@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dongfanker.github.io/about/index.html</loc>
+    
+    <lastmod>2018-08-24T12:30:11.800Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dongfanker.github.io/2018/08/24/connectlb/</loc>
     
     <lastmod>2018-08-24T03:28:43.166Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://dongfanker.github.io/2018/06/25/hello-world/</loc>
     
     <lastmod>2018-08-14T06:11:57.474Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dongfanker.github.io/about/index.html</loc>
-    
-    <lastmod>2018-06-25T10:37:13.645Z</lastmod>
     
   </url>
   
