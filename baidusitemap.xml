@@ -3,10 +3,35 @@
 
 
     
+  <url>
+    <loc>https://dongfanker.github.io/2018/08/14/malloclab/</loc>
+    <lastmod>2018-08-29T09:30:51.890Z</lastmod>
+    <data>
+        <display>
+        <title>CS APP malloclab</title>
+        <pubTime>2018-08-14T05:58:02.000Z</pubTime>
+        
+        <tag>计算机系统</tag>
+         
+        <tag>ICS</tag>
+         
+        <tag>CS APP</tag>
+         
+        <tag>代理服务器</tag>
+         
+         
+           
+             
+              <breadCrumb title="ICS lab" url="https://dongfanker.github.io/categories/ICS-lab/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>https://dongfanker.github.io/2018/08/24/connectlb/</loc>
-    <lastmod>2018-08-24T03:28:43.166Z</lastmod>
+    <lastmod>2018-08-29T09:30:48.061Z</lastmod>
     <data>
         <display>
         <title>Vue、Loopback、mysql</title>
@@ -23,6 +48,7 @@
     </data>
     </url>
 
+    
     
   <url>
     <loc>https://dongfanker.github.io/2018/08/23/Vue_component/</loc>
@@ -80,32 +106,6 @@
            
              
               <breadCrumb title="Vue" url="https://dongfanker.github.io/categories/Vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dongfanker.github.io/2018/08/14/malloclab/</loc>
-    <lastmod>2018-08-14T06:58:26.197Z</lastmod>
-    <data>
-        <display>
-        <title>CS APP malloclab</title>
-        <pubTime>2018-08-14T05:58:02.000Z</pubTime>
-        
-        <tag>计算机系统</tag>
-         
-        <tag>ICS</tag>
-         
-        <tag>CS APP</tag>
-         
-        <tag>代理服务器</tag>
-         
-         
-           
-             
-              <breadCrumb title="ICS lab" url="https://dongfanker.github.io/categories/ICS-lab/"/>
           
         </display>
     </data>

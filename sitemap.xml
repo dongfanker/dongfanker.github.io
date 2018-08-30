@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://dongfanker.github.io/about/index.html</loc>
+    <loc>https://dongfanker.github.io/2018/08/14/malloclab/</loc>
     
-    <lastmod>2018-08-24T12:41:33.474Z</lastmod>
+    <lastmod>2018-08-29T09:30:51.890Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://dongfanker.github.io/2018/08/24/connectlb/</loc>
     
-    <lastmod>2018-08-24T03:28:43.166Z</lastmod>
+    <lastmod>2018-08-29T09:30:48.061Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dongfanker.github.io/about/index.html</loc>
+    
+    <lastmod>2018-08-24T12:41:33.474Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>https://dongfanker.github.io/2018/08/23/Vue-router/</loc>
     
     <lastmod>2018-08-23T08:21:43.355Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dongfanker.github.io/2018/08/14/malloclab/</loc>
-    
-    <lastmod>2018-08-14T06:58:26.197Z</lastmod>
     
   </url>
   
