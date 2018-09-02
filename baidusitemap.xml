@@ -5,10 +5,10 @@
     
   <url>
     <loc>https://dongfanker.github.io/2018/09/03/vue-bus/</loc>
-    <lastmod>2018-09-02T16:55:40.375Z</lastmod>
+    <lastmod>2018-09-02T17:37:14.775Z</lastmod>
     <data>
         <display>
-        <title>Vue项目bus的使用</title>
+        <title>Vue项目bus与vuex的使用</title>
         <pubTime>2018-09-02T16:44:02.000Z</pubTime>
         
         <tag>Vue</tag>

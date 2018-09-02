@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Vue项目vue-bus的应用">
+<meta name="description" content="Vue项目全局传参的方式与简单全项目状态管理">
 <meta name="keywords" content="Vue,router">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vue项目bus的使用">
+<meta property="og:title" content="Vue项目bus与vuex的使用">
 <meta property="og:url" content="https://dongfanker.github.io/2018/09/03/vue-bus/index.html">
 <meta property="og:site_name" content="东方客&#39;Blog">
-<meta property="og:description" content="Vue项目vue-bus的应用">
+<meta property="og:description" content="Vue项目全局传参的方式与简单全项目状态管理">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-02T16:55:40.375Z">
+<meta property="og:updated_time" content="2018-09-02T17:37:14.775Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vue项目bus的使用">
-<meta name="twitter:description" content="Vue项目vue-bus的应用">
+<meta name="twitter:title" content="Vue项目bus与vuex的使用">
+<meta name="twitter:description" content="Vue项目全局传参的方式与简单全项目状态管理">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>Vue项目bus的使用 | 东方客'Blog</title>
+  <title>Vue项目bus与vuex的使用 | 东方客'Blog</title>
   
 
 
@@ -292,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Vue项目bus的使用</h1>
+          <h1 class="post-title" itemprop="name headline">Vue项目bus与vuex的使用</h1>
         
 
         <div class="post-meta">
@@ -344,7 +344,7 @@
 
           
           
-             <span id="/2018/09/03/vue-bus/" class="leancloud_visitors" data-flag-title="Vue项目bus的使用">
+             <span id="/2018/09/03/vue-bus/" class="leancloud_visitors" data-flag-title="Vue项目bus与vuex的使用">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -362,7 +362,7 @@
 
           
               <div class="post-description">
-                  Vue项目vue-bus的应用
+                  Vue项目全局传参的方式与简单全项目状态管理
               </div>
           
 
@@ -379,10 +379,18 @@
       
 
       
-        <p>一般来说，都是利用父组件给子组件使用query或者params传递参数来实现子组件的数据显示，不过，当出现子组件需要向父组件传递数据的时候，就需要用到bus，bus可以自己创建，也可以通过装包来实现</p>
-<h3 id="自己写Bus"><a href="#自己写Bus" class="headerlink" title="自己写Bus"></a>自己写Bus</h3><p>在此处直接将Bus注入Vue对象中，成为全局的组件，在子组件中通过this.$root.Bus.$on(key,method),this.$root.Bus.$emit(key,data)来调用<br>将$on放在mounted，created这些钩子函数中，相应的函数使用(e)=&gt;{function}比较便捷<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">const</span> Bus = <span class="keyword">new</span> Vue()</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> app= <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el:<span class="string">'#app'</span>,</span><br><span class="line">　　 data:&#123;</span><br><span class="line">　　　　Bus</span><br><span class="line">    &#125;　　</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+        <h3 id="为什么需要Bus"><a href="#为什么需要Bus" class="headerlink" title="为什么需要Bus"></a>为什么需要Bus</h3><p>一般来说，都是利用父组件给子组件使用query或者params传递参数来实现子组件的数据显示<br>不过，当出现子组件需要向父组件传递数据的时候，就需要用到bus，bus可以自己创建，也可以通过装包来实现</p>
+<h3 id="直接创建Bus"><a href="#直接创建Bus" class="headerlink" title="直接创建Bus"></a>直接创建Bus</h3><p>在此处直接将Bus注入Vue对象中，成为全局的组件。<br>在子组件中通过this.$root.Bus.$on(key,method),this.$root.Bus.$emit(key,data)来调用<br>将$on放在mounted，created这些钩子函数中，相应的函数使用(e)=&gt;{function}比较便捷<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">const</span> Bus = <span class="keyword">new</span> Vue()</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> app= <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el:<span class="string">'#app'</span>,</span><br><span class="line">　　 data:&#123;</span><br><span class="line">　　　　Bus</span><br><span class="line">    &#125;　　</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 <h3 id="使用vue-bus"><a href="#使用vue-bus" class="headerlink" title="使用vue-bus"></a>使用vue-bus</h3><p>使用yarn或者npm安装vue-bus之后，在main.js中引用它<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> VueBus <span class="keyword">from</span> <span class="string">'vue-bus'</span>;</span><br><span class="line">Vue.use(VueBus);</span><br></pre></td></tr></table></figure></p>
 <p>于是调用直接可以写为 this.$bus.on(key, this.method)，this.$bus.emit(key, { text: …… }<br>其中第一个字符串参数代表key，每个key都能够实现自己的独立传输，this.method为事先定义好的method，用于对传入的数据进行处理</p>
+<h3 id="为什么使用vuex"><a href="#为什么使用vuex" class="headerlink" title="为什么使用vuex"></a>为什么使用vuex</h3><p>当我们的应用遇到多个组件共享状态时，会需要：</p>
+<ol>
+<li>多个组件依赖于同一状态。</li>
+<li>来自不同组件的行为需要变更同一状态。<br>经过我的观察，vuex在其中的作用就是组件与状态的捆绑剥离开来，使得组件状态的改变依赖于某个行为，这使得代码变得易于调试。<br>Vuex采用集中式存储管理应用的所有组件的状态，这里的关键在于集中式存储管理。这意味着本来需要共享状态的更新是需要组件之间通讯的，而现在有了vuex，就组件就都和store通讯了。</li>
+</ol>
+<h3 id="使用vuex"><a href="#使用vuex" class="headerlink" title="使用vuex"></a>使用vuex</h3><p>使用yarn或者npm安装vuex之后，在main.js中引用它<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vuex <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"><span class="keyword">import</span> store <span class="keyword">from</span> <span class="string">'./vuex/store'</span></span><br><span class="line">Vue.use(Vuex)</span><br><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  store</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>随后创建vuex目录,将store.js放在目录下,定义state和mutation<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">import</span> Vuex <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line">Vue.use(Vuex)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">  state: &#123;</span><br><span class="line">    author: <span class="string">'Wise Wrong'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  mutations:&#123;</span><br><span class="line">      newAuthor(state,msg)&#123;</span><br><span class="line">          state.author = msg</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> store</span><br></pre></td></tr></table></figure></p>
+<p>在使用的时候，不直接修改this.$store.state.author,而是使用this.$store.commit()来提交，可以让我们更好的跟踪每一个状态的变化，在大型项目中更为适用</p>
 
       
     </div>
@@ -559,7 +567,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#自己写Bus"><span class="nav-number">1.</span> <span class="nav-text">自己写Bus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用vue-bus"><span class="nav-number">2.</span> <span class="nav-text">使用vue-bus</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么需要Bus"><span class="nav-number">1.</span> <span class="nav-text">为什么需要Bus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#直接创建Bus"><span class="nav-number">2.</span> <span class="nav-text">直接创建Bus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用vue-bus"><span class="nav-number">3.</span> <span class="nav-text">使用vue-bus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么使用vuex"><span class="nav-number">4.</span> <span class="nav-text">为什么使用vuex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用vuex"><span class="nav-number">5.</span> <span class="nav-text">使用vuex</span></a></li></ol></div>
             
 
           </div>
