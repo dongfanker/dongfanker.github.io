@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Vue,router," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="16300200020@fudan.edu.cn">
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://dongfanker.github.io/categories/index.html">
+<meta name="description" content="Vue项目vue-bus的应用">
+<meta name="keywords" content="Vue,router">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue项目bus的使用">
+<meta property="og:url" content="https://dongfanker.github.io/2018/09/03/vue-bus/index.html">
 <meta property="og:site_name" content="东方客&#39;Blog">
-<meta property="og:description" content="16300200020@fudan.edu.cn">
+<meta property="og:description" content="Vue项目vue-bus的应用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-18T13:28:12.000Z">
+<meta property="og:updated_time" content="2018-09-02T16:46:40.662Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
-<meta name="twitter:description" content="16300200020@fudan.edu.cn">
+<meta name="twitter:title" content="Vue项目bus的使用">
+<meta name="twitter:description" content="Vue项目vue-bus的应用">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://dongfanker.github.io/categories/"/>
+  <link rel="canonical" href="https://dongfanker.github.io/2018/09/03/vue-bus/"/>
 
 
 
 
 
-  <title>分类 | 东方客'Blog</title>
+  <title>Vue项目bus的使用 | 东方客'Blog</title>
   
 
 
@@ -262,40 +263,186 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dongfanker.github.io/2018/09/03/vue-bus/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dongfanker">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/me1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="东方客'Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">分类</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 3 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ICS-lab/">ICS lab</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Vue/">Vue</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/hackerrank/">hackerrank</a><span class="category-list-count">2</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">Vue项目bus的使用</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-03T00:44:02+08:00">
+                2018-09-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Vue/" itemprop="url" rel="index">
+                    <span itemprop="name">Vue</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/03/vue-bus/" class="leancloud_visitors" data-flag-title="Vue项目bus的使用">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  Vue项目vue-bus的应用
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>一般来说，都是利用父组件给子组件使用query或者params传递参数来实现子组件的数据显示，不过，当出现子组件需要向父组件传递数据的时候，就需要用到bus，bus可以自己创建，也可以通过装包来实现</p>
+<h3 id="自己写Bus"><a href="#自己写Bus" class="headerlink" title="自己写Bus"></a>自己写Bus</h3><p>在此处直接将Bus注入Vue对象中，成为全局的组件，在子组件中通过this.$root.Bus.$on(),this.$root.Bus.$emit()来调用<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">const</span> Bus = <span class="keyword">new</span> Vue()</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> app= <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el:<span class="string">'#app'</span>,</span><br><span class="line">　　 data:&#123;</span><br><span class="line">　　　　Bus</span><br><span class="line">    &#125;　　</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h3 id="使用vue-bus"><a href="#使用vue-bus" class="headerlink" title="使用vue-bus"></a>使用vue-bus</h3><p>使用yarn或者npm安装vue-bus之后，在main.js中引用它<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> VueBus <span class="keyword">from</span> <span class="string">'vue-bus'</span>;</span><br><span class="line">Vue.use(VueBus);</span><br></pre></td></tr></table></figure></p>
+<p>于是乎调用直接可以写为 this.$bus.on(key, this.method)，this.$bus.emit(key, { text: …… }，其中第一个字符串参数代表key，每个key都能够实现自己的独立传输，this.method为事先定义好的method，用于对传入的数据进行处理</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Vue/" rel="tag"># Vue</a>
+          
+            <a href="/tags/router/" rel="tag"># router</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/01/Vue-route-pamas/" rel="next" title="Vue项目路由传参">
+                <i class="fa fa-chevron-left"></i> Vue项目路由传参
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -328,8 +475,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -393,6 +549,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#自己写Bus"><span class="nav-number">1.</span> <span class="nav-text">自己写Bus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用vue-bus"><span class="nav-number">2.</span> <span class="nav-text">使用vue-bus</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
