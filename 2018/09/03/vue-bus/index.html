@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="东方客&#39;Blog">
 <meta property="og:description" content="Vue项目vue-bus的应用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-02T16:46:40.662Z">
+<meta property="og:updated_time" content="2018-09-02T16:55:40.375Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue项目bus的使用">
 <meta name="twitter:description" content="Vue项目vue-bus的应用">
@@ -380,9 +380,9 @@
 
       
         <p>一般来说，都是利用父组件给子组件使用query或者params传递参数来实现子组件的数据显示，不过，当出现子组件需要向父组件传递数据的时候，就需要用到bus，bus可以自己创建，也可以通过装包来实现</p>
-<h3 id="自己写Bus"><a href="#自己写Bus" class="headerlink" title="自己写Bus"></a>自己写Bus</h3><p>在此处直接将Bus注入Vue对象中，成为全局的组件，在子组件中通过this.$root.Bus.$on(),this.$root.Bus.$emit()来调用<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">const</span> Bus = <span class="keyword">new</span> Vue()</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> app= <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el:<span class="string">'#app'</span>,</span><br><span class="line">　　 data:&#123;</span><br><span class="line">　　　　Bus</span><br><span class="line">    &#125;　　</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h3 id="自己写Bus"><a href="#自己写Bus" class="headerlink" title="自己写Bus"></a>自己写Bus</h3><p>在此处直接将Bus注入Vue对象中，成为全局的组件，在子组件中通过this.$root.Bus.$on(key,method),this.$root.Bus.$emit(key,data)来调用<br>将$on放在mounted，created这些钩子函数中，相应的函数使用(e)=&gt;{function}比较便捷<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">const</span> Bus = <span class="keyword">new</span> Vue()</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> app= <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el:<span class="string">'#app'</span>,</span><br><span class="line">　　 data:&#123;</span><br><span class="line">　　　　Bus</span><br><span class="line">    &#125;　　</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 <h3 id="使用vue-bus"><a href="#使用vue-bus" class="headerlink" title="使用vue-bus"></a>使用vue-bus</h3><p>使用yarn或者npm安装vue-bus之后，在main.js中引用它<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> VueBus <span class="keyword">from</span> <span class="string">'vue-bus'</span>;</span><br><span class="line">Vue.use(VueBus);</span><br></pre></td></tr></table></figure></p>
-<p>于是乎调用直接可以写为 this.$bus.on(key, this.method)，this.$bus.emit(key, { text: …… }，其中第一个字符串参数代表key，每个key都能够实现自己的独立传输，this.method为事先定义好的method，用于对传入的数据进行处理</p>
+<p>于是调用直接可以写为 this.$bus.on(key, this.method)，this.$bus.emit(key, { text: …… }<br>其中第一个字符串参数代表key，每个key都能够实现自己的独立传输，this.method为事先定义好的method，用于对传入的数据进行处理</p>
 
       
     </div>
