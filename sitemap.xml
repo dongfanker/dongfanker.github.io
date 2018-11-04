@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dongfanker.github.io/2018/11/04/trie/</loc>
+    
+    <lastmod>2018-11-04T02:35:05.585Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dongfanker.github.io/about/index.html</loc>
+    
+    <lastmod>2018-11-04T02:31:46.932Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dongfanker.github.io/2018/09/03/vue-bus/</loc>
     
     <lastmod>2018-09-02T17:39:45.077Z</lastmod>
@@ -40,13 +54,6 @@
     <loc>https://dongfanker.github.io/2018/08/14/malloclab/</loc>
     
     <lastmod>2018-08-30T11:26:45.427Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dongfanker.github.io/about/index.html</loc>
-    
-    <lastmod>2018-08-24T12:41:33.474Z</lastmod>
     
   </url>
   
