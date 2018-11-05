@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="smooth,kneser-ney," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="16300200020@fudan.edu.cn">
-<meta property="og:type" content="website">
-<meta property="og:title" content="东方客&#39;Blog">
-<meta property="og:url" content="https://dongfanker.github.io/archives/index.html">
+<meta name="description" content="NLP中比较advance的smooth方法">
+<meta name="keywords" content="smooth,kneser-ney">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Good-Turing、Absolute、kneser-ney smooth">
+<meta property="og:url" content="https://dongfanker.github.io/2018/11/04/kneser-ney/index.html">
 <meta property="og:site_name" content="东方客&#39;Blog">
-<meta property="og:description" content="16300200020@fudan.edu.cn">
+<meta property="og:description" content="NLP中比较advance的smooth方法">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-05T09:34:03.117Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="东方客&#39;Blog">
-<meta name="twitter:description" content="16300200020@fudan.edu.cn">
+<meta name="twitter:title" content="Good-Turing、Absolute、kneser-ney smooth">
+<meta name="twitter:description" content="NLP中比较advance的smooth方法">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://dongfanker.github.io/archives/"/>
+  <link rel="canonical" href="https://dongfanker.github.io/2018/11/04/kneser-ney/"/>
 
 
 
 
 
-  <title>归档 | 东方客'Blog</title>
+  <title>Good-Turing、Absolute、kneser-ney smooth | 东方客'Blog</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <a href="https://github.com/dongfanker"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 30;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
@@ -259,411 +261,203 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dongfanker.github.io/2018/11/04/kneser-ney/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dongfanker">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/me1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="东方客'Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Good-Turing、Absolute、kneser-ney smooth</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-04T00:44:02+08:00">
+                2018-11-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 13 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/自然语言处理/" itemprop="url" rel="index">
+                    <span itemprop="name">自然语言处理</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/04/kneser-ney/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/04/kneser-ney/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
+             <span id="/2018/11/04/kneser-ney/" class="leancloud_visitors" data-flag-title="Good-Turing、Absolute、kneser-ney smooth">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/04/kneser-ney/" itemprop="url">
-              
-                <span itemprop="name">Good-Turing、Absolute、kneser-ney smooth</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-11-04T00:44:02+08:00"
-              content="2018-11-04" >
-          11-04
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
+              <div class="post-description">
+                  NLP中比较advance的smooth方法
+              </div>
+          
 
+        </div>
+      </header>
+    
 
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/04/trie/" itemprop="url">
-              
-                <span itemprop="name">Trie树</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-11-04T00:44:02+08:00"
-              content="2018-11-04" >
-          11-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/03/vue-bus/" itemprop="url">
-              
-                <span itemprop="name">Vue项目bus与vuex的使用</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-03T00:44:02+08:00"
-              content="2018-09-03" >
-          09-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/01/Vue-route-pamas/" itemprop="url">
-              
-                <span itemprop="name">Vue项目路由传参</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-01T15:44:02+08:00"
-              content="2018-09-01" >
-          09-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>###Good-Turing smoothing<br>Good-Turing基本思想是：用观察计数较高的N元语法数重新估计概率量的大小，并把它指派给那些具有零计数或者较低计数的N元语法。<br>公式:<br>$$c^<em> = \frac{(c+1)N_{c+1}}{N_c}$$<br>其中c为某个N-gram出现的频数,$N_c$为出现次数为c的N-Gram的词组的个数，$c^</em>为Good-Turing平滑计数$<br>例子:对于a = [A,A,A,B,B,C,D,E] sum(len(a)) = 7<br>$c_A = 3$    $c_C = 2$<br>$ c_B = c_D = c_E = 1$<br>$N_1$=4 $N_2$=1 $N_3=1$<br>thus<br>$c^<em>_A = 4</em>\frac{0}{3} = 0$<br>$c^<em>_B = 3</em>\frac{1}{1} = 3$<br>$c^<em>_C = c^</em>_D = c^<em>_E = 2</em>\frac{1}{4} = \frac{1}{2}$<br>（注意在他们求概率的时候都需要除以N = 7）<br>然而这样会导致最高频率的结果最后的计数为0，解决方法如下</p>
+<ol>
+<li>可以对于较低的计数使用$P_{GT}$,而对于较高的计数直接使用$P_{MLE} = \frac{c}{N}$</li>
+<li>也可以在较大的计数的时候使用$F(r) = ar^b $,其中a，b为参数，b&lt;-1</li>
+</ol>
+<p>最终会出现概率之和不为0的情况，这时候要进行归一化，固定没有见过的结果的概率，将已经见过的概率之和归一化使得共同的概率结果为1<br>例子可见于<a href="https://www.csd.uwo.ca/courses/CS4442b/L9-NLP-LangModels.pdf" target="_blank" rel="noopener">L9-NLP-LangModels.pdf</a>第64页</p>
+<h3 id="Absolute-discounting"><a href="#Absolute-discounting" class="headerlink" title="Absolute discounting"></a>Absolute discounting</h3><p>一般的interpolation是利用高阶的模型的$P_MLE$乘以一个$\lambda$,而此处是从每个非零计数中减掉一个固定的$\delta \in (0,1)$,一般取$\delta = 0.75$<br>在bigram中，公式为<br>$$P_{AD}(w_i|w_{i-1}) = \frac{c(w_{i-1},w_i)-\delta}{c(w_{i-1})}+\lambda(w_{i-1})P(w))$$<br>其中$\lambda(w_{i-1})为插值权重系数$<br>于是完整的公式就是<br>$$p_{abs}(w_i|w^i_{i-n+1}) = \frac{max{c(w^i_{i-n+1})-\delta,0}}{\sum_{w_i}c(w^i_{i-n+1})}+(1-\lambda_{w^{i-1}<em>{i-n+1}}p</em>{ab}(w_i|w^{i-1}{i-n+2}))$$<br>为了使得结果的总和为1<br>$$1 - \lambda _ { w _ { i - n + 1 } } ^ { i - 1 } = \frac { \delta } { \sum _ { w _ { i } } c ( w _ { i - n + 1 } ^ { i } ) } N _ { 1 + } ( w _ { i - n + 1 } ^ { i - 1 }  \mathbf { \bullet } )$$<br>其中<br>$$N _ { 1 + } \left( w _ { i - n + 1 } ^ { i - 1 }  \bullet \right) = \left| \left{ w _ { i } : c \left( w _ { i - n + 1 } ^ { i - 1 } w _ { i } \right) &gt; 0 \right} \right|$$</p>
+<p>###Kneser-Ney smoothing<br>bigram下的公式:<br>$$p _ { K N } \left( w _ { i } | w _ { i - 1 } \right) = \frac { \max \left( c \left( w _ { i - 1 } , w _ { i } \right) - \delta , 0 \right) } { \sum _ { w ^ { \prime } } c \left( w _ { i - 1 } , w ^ { \prime } \right) } + \lambda _ { w _ { i - 1 } } p _ { K N } \left( w _ { i } \right)$$<br>其中<br>$$p _ { K N } \left( w _ { i } \right) = \frac { \left| \left{ w ^ { \prime } : 0 &lt; c \left( w ^ { \prime } , w _ { i } \right) \right} \right| } { \left| \left{ \left( w ^ { \prime } , w ^ { \prime \prime } \right) : 0 &lt; c \left( w ^ { \prime } , w ^ { \prime \prime } \right) \right} \right| }$$<br>为的是求解在一个不熟悉的上下文中看见单词$w_i$的可能性,这使用$w_i$在出现在所有单词的次数和除以所有bigram的和来衡量<br>减掉一个固定的$\delta \in (0,1)$,一般取$\delta = 0.75$<br>$\lambda_{w_{i-1}}$是用来平衡使得条件概率$p _ { K N } ( w _ { i } | w _ { i - 1 } )$的总和为1的系数<br>得出满足条件的$\lambda_{w_{i-1}}$结果为<br>$$\lambda _ { w _ { i - 1 } } = \frac { \delta } { \sum _ { w ^ { \prime } } c \left( w _ { i - 1 } , w ^ { \prime } \right) } \left| \left{ w ^ { \prime } : 0 &lt; c \left( w _ { i - 1 } , w ^ { \prime } \right) \right} \right|$$<br>可以推广到n-gram<br>$p _ { K N } \left( w _ { i } | w _ { i - n + 1 } ^ { i - 1 } \right) = \frac { \max \left( c \left( w _ { i - n + 1 } ^ { i - 1 } , w _ { i } \right) - \delta , 0 \right) } { \sum _ { w ^ { \prime } } c \left( w _ { i - n + 1 } ^ { i - 1 } , w ^ { \prime } \right) } + \delta \frac { \left| \left{ w ^ { \prime } : 0 &lt; c \left( w _ { i - n + 1 } ^ { i - 1 } , w ^ { \prime } \right) \right} \right| } { \sum _ { w _ { i } } c \left( w _ { i - n + 1 } ^ { i } \right) } p _ { K N } \left( w _ { i } | w _ { i - n + 2 } ^ { i - 1 } \right) $</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/31/dict_hr/" itemprop="url">
-              
-                <span itemprop="name">Hackerrank Dicts 解题记录</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-31T02:44:02+08:00"
-              content="2018-08-31" >
-          08-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/30/list_hr/" itemprop="url">
-              
-                <span itemprop="name">Hackerrank Arrays 解题记录</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-30T11:44:02+08:00"
-              content="2018-08-30" >
-          08-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/24/connectlb/" itemprop="url">
-              
-                <span itemprop="name">Vue、Loopback、mysql</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-24T11:44:02+08:00"
-              content="2018-08-24" >
-          08-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/23/Vue_component/" itemprop="url">
-              
-                <span itemprop="name">Vue组件的使用</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-23T17:24:02+08:00"
-              content="2018-08-23" >
-          08-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/23/Vueform/" itemprop="url">
-              
-                <span itemprop="name">Vue项目v-for、v-model的使用</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-23T15:44:02+08:00"
-              content="2018-08-23" >
-          08-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/23/Vue-router/" itemprop="url">
-              
-                <span itemprop="name">Vue项目router注意事项</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-23T15:44:02+08:00"
-              content="2018-08-23" >
-          08-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/smooth/" rel="tag"># smooth</a>
+          
+            <a href="/tags/kneser-ney/" rel="tag"># kneser-ney</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/04/trie/" rel="next" title="Trie树">
+                <i class="fa fa-chevron-left"></i> Trie树
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -671,6 +465,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -691,8 +492,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -756,6 +566,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Absolute-discounting"><span class="nav-number">1.</span> <span class="nav-text">Absolute discounting</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -911,6 +737,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
