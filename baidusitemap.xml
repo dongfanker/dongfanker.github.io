@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://dongfanker.github.io/2018/11/04/cookbookString/</loc>
+    <lastmod>2018-11-07T03:40:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>字符串和文本处理</title>
+        <pubTime>2018-11-03T16:44:02.000Z</pubTime>
+        
+        <tag>string process</tag>
+         
+         
+           
+             
+              <breadCrumb title="自然语言处理" url="https://dongfanker.github.io/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://dongfanker.github.io/2018/11/04/kneser-ney/</loc>
     <lastmod>2018-11-07T03:24:13.491Z</lastmod>
     <data>
