@@ -83,11 +83,11 @@
 <meta name="keywords" content="string process">
 <meta property="og:type" content="article">
 <meta property="og:title" content="字符串和文本处理">
-<meta property="og:url" content="https://dongfanker.github.io/2018/11/04/cookbookString/index.html">
+<meta property="og:url" content="https://dongfanker.github.io/2018/11/07/cookbookString/index.html">
 <meta property="og:site_name" content="东方客&#39;Blog">
 <meta property="og:description" content="python的字符串与文本处理的技巧">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-07T03:40:23.914Z">
+<meta property="og:updated_time" content="2018-11-07T04:29:39.169Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="字符串和文本处理">
 <meta name="twitter:description" content="python的字符串与文本处理的技巧">
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="https://dongfanker.github.io/2018/11/04/cookbookString/"/>
+  <link rel="canonical" href="https://dongfanker.github.io/2018/11/07/cookbookString/"/>
 
 
 
@@ -275,7 +275,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://dongfanker.github.io/2018/11/04/cookbookString/">
+    <link itemprop="mainEntityOfPage" href="https://dongfanker.github.io/2018/11/07/cookbookString/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dongfanker">
@@ -304,8 +304,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-04T00:44:02+08:00">
-                2018-11-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-07T00:44:02+08:00">
+                2018-11-07
               </time>
             
 
@@ -345,8 +345,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/04/cookbookString/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/04/cookbookString/" itemprop="commentCount"></span>
+                <a href="/2018/11/07/cookbookString/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/07/cookbookString/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -354,7 +354,7 @@
 
           
           
-             <span id="/2018/11/04/cookbookString/" class="leancloud_visitors" data-flag-title="字符串和文本处理">
+             <span id="/2018/11/07/cookbookString/" class="leancloud_visitors" data-flag-title="字符串和文本处理">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -389,8 +389,16 @@
       
 
       
-        <h4 id="Example-1"><a href="#Example-1" class="headerlink" title="Example 1"></a>Example 1</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">line = <span class="string">"爸爸 妈妈; 儿子, 女儿,弟弟, 妹妹"</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">print(re.split(<span class="string">r'[;,\s]\s*'</span>, line))</span><br></pre></td></tr></table></figure>
-<p>result:<br><figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="symbol">'爸爸</span>', <span class="symbol">'妈妈</span>', <span class="symbol">'儿子</span>', <span class="symbol">'女儿</span>', <span class="symbol">'弟弟</span>', <span class="symbol">'妹妹</span>']</span><br></pre></td></tr></table></figure></p>
+        <h4 id="字符串的切分"><a href="#字符串的切分" class="headerlink" title="字符串的切分"></a>字符串的切分</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">line = <span class="string">"爸爸 妈妈; 儿子, 女儿,弟弟, 妹妹"</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">print(re.split(<span class="string">r'[;,\s]\s*'</span>, line))</span><br><span class="line">print(re.split(<span class="string">r'(;|,|\s)\s*'</span>, line))</span><br><span class="line">fields = re.split(<span class="string">r'(;|,|\s)\s*'</span>, line)</span><br><span class="line">print(fields[::<span class="number">2</span>])</span><br><span class="line">print(fields[<span class="number">1</span>::<span class="number">2</span>])</span><br></pre></td></tr></table></figure>
+<p>result:<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">['爸爸', '妈妈', '儿子', '女儿', '弟弟', '妹妹']</span><br><span class="line">['爸爸', ' ', '妈妈', ';', '儿子', ',', '女儿', ',', '弟弟', ',', '妹妹']</span><br><span class="line">['爸爸', '妈妈', '儿子', '女儿', '弟弟', '妹妹']</span><br><span class="line">[' ', ';', ',', ',', ',']</span><br></pre></td></tr></table></figure></p>
+<p>总结: “\s” 代表空格，一定范围的符号用[]、(…|…|…)框起来，使用[]会去掉匹配的文本，而(…|…|…)会保留匹配的分组，可变长(0-n)的字段可以加*l，在末尾的field的切片中，最后一位代表step</p>
+<h4 id="字符串的开头与结尾匹配"><a href="#字符串的开头与结尾匹配" class="headerlink" title="字符串的开头与结尾匹配"></a>字符串的开头与结尾匹配</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">filenames = [<span class="string">"Makefile"</span>, <span class="string">"foo.c"</span>, <span class="string">"bar.py"</span>, <span class="string">"spam.c"</span>, <span class="string">"spam.h"</span>]</span><br><span class="line">print(any(name.endswith(<span class="string">".py"</span>) <span class="keyword">for</span> name <span class="keyword">in</span> filenames))</span><br><span class="line">print([name <span class="keyword">for</span> name <span class="keyword">in</span> filenames <span class="keyword">if</span> name.endswith((<span class="string">".c"</span>, <span class="string">".h"</span>))])</span><br></pre></td></tr></table></figure>
+<p>result<br><figure class="highlight sml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">True</span></span><br><span class="line">[<span class="symbol">'foo</span>.c', <span class="symbol">'spam</span>.c', <span class="symbol">'spam</span>.h']</span><br></pre></td></tr></table></figure></p>
+<p>总结：直接使用str.startswith()，str.endswith()，any用于检验列表元素的有无，两个函数可以作为判断指标生成新的列表，注意这两个函数内部如果有多个匹配的话需要用tuple(元组)把它们括起来<br>也可以使用match来进行开头的匹配，代码如下<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">url = <span class="string">"http://www.python.org"</span></span><br><span class="line">res = re.match(<span class="string">"https|http|ftp"</span>, url)</span><br><span class="line">print(res != <span class="keyword">None</span>)</span><br><span class="line">print(res.group())</span><br></pre></td></tr></table></figure></p>
+<p>result<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="string">http</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="字符串的匹配与搜索"><a href="#字符串的匹配与搜索" class="headerlink" title="字符串的匹配与搜索"></a>字符串的匹配与搜索</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">text = <span class="string">"Today is 11/27/2012. PyCon starts 3/13/2013"</span></span><br><span class="line">print(text.find(<span class="string">"PyCon"</span>))</span><br><span class="line">print(re.findall(<span class="string">r'\d+/\d+/\d+'</span>, text))</span><br><span class="line">datapat = re.compile(<span class="string">r'\d+/\d+/\d+'</span>)</span><br><span class="line">print(datapat.findall(text))</span><br></pre></td></tr></table></figure>
+<p>result<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">21</span></span><br><span class="line">['<span class="number">11</span>/<span class="number">27</span>/<span class="number">2012</span>', '<span class="number">3</span>/<span class="number">13</span>/<span class="number">2013</span>']</span><br><span class="line">['<span class="number">11</span>/<span class="number">27</span>/<span class="number">2012</span>', '<span class="number">3</span>/<span class="number">13</span>/<span class="number">2013</span>']</span><br></pre></td></tr></table></figure></p>
+<p>find可以返回第一个匹配的位置，如果想要找到所有的匹配，可以使用findall，一方面可以直接使用，另一方面可以将模式字符串预编译为模式对象</p>
 
       
     </div>
@@ -568,7 +576,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-1"><span class="nav-number">1.</span> <span class="nav-text">Example 1</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串的切分"><span class="nav-number">1.</span> <span class="nav-text">字符串的切分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串的开头与结尾匹配"><span class="nav-number">2.</span> <span class="nav-text">字符串的开头与结尾匹配</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串的匹配与搜索"><span class="nav-number">3.</span> <span class="nav-text">字符串的匹配与搜索</span></a></li></ol></div>
             
 
           </div>

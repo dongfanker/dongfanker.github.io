@@ -4,14 +4,16 @@
 
     
   <url>
-    <loc>https://dongfanker.github.io/2018/11/04/cookbookString/</loc>
-    <lastmod>2018-11-07T03:40:23.914Z</lastmod>
+    <loc>https://dongfanker.github.io/2018/11/04/kneser-ney/</loc>
+    <lastmod>2018-11-07T04:31:37.225Z</lastmod>
     <data>
         <display>
-        <title>字符串和文本处理</title>
+        <title>Good-Turing、Absolute、kneser-ney smooth</title>
         <pubTime>2018-11-03T16:44:02.000Z</pubTime>
         
-        <tag>string process</tag>
+        <tag>smooth</tag>
+         
+        <tag>kneser-ney</tag>
          
          
            
@@ -24,16 +26,14 @@
 
     
   <url>
-    <loc>https://dongfanker.github.io/2018/11/04/kneser-ney/</loc>
-    <lastmod>2018-11-07T03:24:13.491Z</lastmod>
+    <loc>https://dongfanker.github.io/2018/11/07/cookbookString/</loc>
+    <lastmod>2018-11-07T04:29:39.169Z</lastmod>
     <data>
         <display>
-        <title>Good-Turing、Absolute、kneser-ney smooth</title>
-        <pubTime>2018-11-03T16:44:02.000Z</pubTime>
+        <title>字符串和文本处理</title>
+        <pubTime>2018-11-06T16:44:02.000Z</pubTime>
         
-        <tag>smooth</tag>
-         
-        <tag>kneser-ney</tag>
+        <tag>string process</tag>
          
          
            
