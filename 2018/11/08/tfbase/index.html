@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="温习一下TensorFlow的基本内容">
+<meta name="description" content="温习一下TensorFlow的基本概念">
 <meta name="keywords" content="tensoflow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Tensorflow 基础概念">
+<meta property="og:title" content="Tensorflow 基本概念">
 <meta property="og:url" content="https://dongfanker.github.io/2018/11/08/tfbase/index.html">
 <meta property="og:site_name" content="东方客&#39;Blog">
-<meta property="og:description" content="温习一下TensorFlow的基本内容">
+<meta property="og:description" content="温习一下TensorFlow的基本概念">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-08T16:08:19.413Z">
+<meta property="og:updated_time" content="2018-11-08T16:11:59.907Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tensorflow 基础概念">
-<meta name="twitter:description" content="温习一下TensorFlow的基本内容">
+<meta name="twitter:title" content="Tensorflow 基本概念">
+<meta name="twitter:description" content="温习一下TensorFlow的基本概念">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>Tensorflow 基础概念 | 东方客'Blog</title>
+  <title>Tensorflow 基本概念 | 东方客'Blog</title>
   
 
 
@@ -292,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Tensorflow 基础概念</h1>
+          <h1 class="post-title" itemprop="name headline">Tensorflow 基本概念</h1>
         
 
         <div class="post-meta">
@@ -354,7 +354,7 @@
 
           
           
-             <span id="/2018/11/08/tfbase/" class="leancloud_visitors" data-flag-title="Tensorflow 基础概念">
+             <span id="/2018/11/08/tfbase/" class="leancloud_visitors" data-flag-title="Tensorflow 基本概念">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -372,7 +372,7 @@
 
           
               <div class="post-description">
-                  温习一下TensorFlow的基本内容
+                  温习一下TensorFlow的基本概念
               </div>
           
 
@@ -389,16 +389,16 @@
       
 
       
-        <p>Tensorflow程序的计算可分为两个阶段，在第一个阶段定义所有计算图中的计算，第二阶段为执行计算。<br>下面定义一个计算，生成计算图<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">a = tf.constant([<span class="number">1.0</span>, <span class="number">2.0</span>], name=<span class="string">"a"</span>)</span><br><span class="line">b = tf.constant([<span class="number">2.0</span>, <span class="number">3.0</span>], name=<span class="string">"b"</span>)</span><br><span class="line">result = a + b</span><br><span class="line">print(tf.get_default_graph())</span><br><span class="line">print(a.graph)</span><br><span class="line">print(b.graph)</span><br></pre></td></tr></table></figure></p>
+        <h4 id="计算图"><a href="#计算图" class="headerlink" title="计算图"></a>计算图</h4><p>Tensorflow程序的计算可分为两个阶段，在第一个阶段定义所有计算图中的计算，第二阶段为执行计算。<br>下面定义一个计算，生成计算图<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">a = tf.constant([<span class="number">1.0</span>, <span class="number">2.0</span>], name=<span class="string">"a"</span>)</span><br><span class="line">b = tf.constant([<span class="number">2.0</span>, <span class="number">3.0</span>], name=<span class="string">"b"</span>)</span><br><span class="line">result = a + b</span><br><span class="line">print(tf.get_default_graph())</span><br><span class="line">print(a.graph)</span><br><span class="line">print(b.graph)</span><br></pre></td></tr></table></figure></p>
 <p>result: 均属于同一个计算图<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;tensorflow<span class="selector-class">.python</span><span class="selector-class">.framework</span><span class="selector-class">.ops</span><span class="selector-class">.Graph</span> <span class="selector-tag">object</span> at <span class="number">0</span>x0000012C137DAD68&gt;</span><br><span class="line">&lt;tensorflow<span class="selector-class">.python</span><span class="selector-class">.framework</span><span class="selector-class">.ops</span><span class="selector-class">.Graph</span> <span class="selector-tag">object</span> at <span class="number">0</span>x0000012C137DAD68&gt;</span><br><span class="line">&lt;tensorflow<span class="selector-class">.python</span><span class="selector-class">.framework</span><span class="selector-class">.ops</span><span class="selector-class">.Graph</span> <span class="selector-tag">object</span> at <span class="number">0</span>x0000012C137DAD68&gt;</span><br></pre></td></tr></table></figure></p>
 <p>还可以通过tf.Graph函数来生成新的计算图，代码如下，注意注释的部分已经被淘汰<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">g1 = tf.Graph()</span><br><span class="line"><span class="keyword">with</span> g1.as_default():</span><br><span class="line">    v1 = tf.get_variable(</span><br><span class="line">        <span class="comment"># "v", initializer=tf.zeros_initializer(shape[1])</span></span><br><span class="line">        <span class="string">"v1"</span>, shape=[<span class="number">4</span>], initializer=tf.zeros_initializer()</span><br><span class="line">    )</span><br><span class="line">    v2 = tf.get_variable(</span><br><span class="line">        <span class="string">"v2"</span>, shape=[<span class="number">4</span>], initializer=tf.ones_initializer()</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> tf.Session(graph=g1) <span class="keyword">as</span> sess:</span><br><span class="line">    <span class="comment"># # tf.initialize_all_variables().run()</span></span><br><span class="line">    sess.run(tf.global_variables_initializer())</span><br><span class="line">    <span class="keyword">with</span> tf.variable_scope(<span class="string">""</span>, reuse=<span class="keyword">True</span>):</span><br><span class="line">        print(sess.run(tf.get_variable(<span class="string">"v1"</span>)))</span><br><span class="line">        print(sess.run(tf.get_variable(<span class="string">"v2"</span>)))</span><br></pre></td></tr></table></figure></p>
 <p>result<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[ <span class="number">0.</span>  <span class="number">0.</span>  <span class="number">0.</span>  <span class="number">0.</span>]</span><br><span class="line">[ <span class="number">1.</span>  <span class="number">1.</span>  <span class="number">1.</span>  <span class="number">1.</span>]</span><br></pre></td></tr></table></figure></p>
-<p>下面介绍张量<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">a = tf.constant([<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">"a"</span>, dtype=tf.float32)</span><br><span class="line">b = tf.constant([<span class="number">2.0</span>, <span class="number">3.0</span>], name=<span class="string">"b"</span>)</span><br><span class="line">result1 = a + b</span><br><span class="line">print(result1)</span><br><span class="line">result2 = tf.add(a, b, name=<span class="string">"add"</span>)</span><br><span class="line">print(result2)</span><br></pre></td></tr></table></figure></p>
+<h4 id="张量"><a href="#张量" class="headerlink" title="张量"></a>张量</h4><p>下面介绍张量<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">a = tf.constant([<span class="number">1</span>, <span class="number">2</span>], name=<span class="string">"a"</span>, dtype=tf.float32)</span><br><span class="line">b = tf.constant([<span class="number">2.0</span>, <span class="number">3.0</span>], name=<span class="string">"b"</span>)</span><br><span class="line">result1 = a + b</span><br><span class="line">print(result1)</span><br><span class="line">result2 = tf.add(a, b, name=<span class="string">"add"</span>)</span><br><span class="line">print(result2)</span><br></pre></td></tr></table></figure></p>
 <p>result：可以看见在result1中默认会命名“+”为add，后面相同的名字TensorFlow会进行修改<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">Tensor</span><span class="params">(<span class="string">"add:0"</span>, shape=(<span class="number">2</span>,)</span></span>, dtype=float32)</span><br><span class="line"><span class="function"><span class="title">Tensor</span><span class="params">(<span class="string">"add_1:0"</span>, shape=(<span class="number">2</span>,)</span></span>, dtype=float32)</span><br></pre></td></tr></table></figure></p>
-<p>下面是会话<br>创建会话可以通过两种模式创建，一种是明确创建和关闭会话的函数<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sess = tf.Session()</span><br><span class="line">sess.run(...)</span><br><span class="line">sess.close()</span><br></pre></td></tr></table></figure></p>
+<h4 id="会话"><a href="#会话" class="headerlink" title="会话"></a>会话</h4><p>下面是会话<br>创建会话可以通过两种模式创建，一种是明确创建和关闭会话的函数<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sess = tf.Session()</span><br><span class="line">sess.run(...)</span><br><span class="line">sess.close()</span><br></pre></td></tr></table></figure></p>
 <p>另一种就直接通过上下文管理器来管理会话，使用with<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> tf.Session() <span class="keyword">as</span> sess:</span><br><span class="line">    sess.run(...)</span><br></pre></td></tr></table></figure></p>
 <p>配置GPU的使用,其中allow_soft_placement会使得某些不被GPU支持的运算放入CPU中，而log_device_placement选择是否打印日记，可以记录那个节点被安排到哪个设备方便调试，而在生产环境中设为False,可以减少日志量<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">config = tf.ConfigProto(<span class="attribute">allow_soft_placement</span>=<span class="literal">True</span>, <span class="attribute">log_device_placement</span>=<span class="literal">True</span>)</span><br><span class="line">with tf.Session(<span class="attribute">graph</span>=g1, <span class="attribute">config</span>=config) as sess:</span><br><span class="line">    <span class="built_in">..</span><span class="built_in">..</span><span class="built_in">..</span></span><br></pre></td></tr></table></figure></p>
-<p>下面是一个简单的神经网络的前向传播的过程,注意x为列向量，有两个[]<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">w1 = tf.Variable(tf.random_normal([<span class="number">2</span>, <span class="number">3</span>], stddev=<span class="number">1</span>, seed=<span class="number">1</span>))</span><br><span class="line">w2 = tf.Variable(tf.random_normal([<span class="number">3</span>, <span class="number">1</span>], stddev=<span class="number">1</span>, seed=<span class="number">1</span>))</span><br><span class="line">print(w1, w2)</span><br><span class="line">x = tf.constant([[<span class="number">0.7</span>, <span class="number">0.9</span>]])</span><br><span class="line">a = tf.matmul(x, w1)</span><br><span class="line">y = tf.matmul(a, w2)</span><br><span class="line">sess = tf.Session()</span><br><span class="line">sess.run(tf.global_variables_initializer())</span><br><span class="line">print(sess.run(y))</span><br><span class="line">sess.close()</span><br></pre></td></tr></table></figure></p>
+<h4 id="前向传播示例"><a href="#前向传播示例" class="headerlink" title="前向传播示例"></a>前向传播示例</h4><p>下面是一个简单的神经网络的前向传播的过程,注意x为列向量，有两个[]<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">w1 = tf.Variable(tf.random_normal([<span class="number">2</span>, <span class="number">3</span>], stddev=<span class="number">1</span>, seed=<span class="number">1</span>))</span><br><span class="line">w2 = tf.Variable(tf.random_normal([<span class="number">3</span>, <span class="number">1</span>], stddev=<span class="number">1</span>, seed=<span class="number">1</span>))</span><br><span class="line">print(w1, w2)</span><br><span class="line">x = tf.constant([[<span class="number">0.7</span>, <span class="number">0.9</span>]])</span><br><span class="line">a = tf.matmul(x, w1)</span><br><span class="line">y = tf.matmul(a, w2)</span><br><span class="line">sess = tf.Session()</span><br><span class="line">sess.run(tf.global_variables_initializer())</span><br><span class="line">print(sess.run(y))</span><br><span class="line">sess.close()</span><br></pre></td></tr></table></figure></p>
 <p>result<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">[[ 3.95757794]]</span></span><br></pre></td></tr></table></figure></p>
 
       
@@ -493,8 +493,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -558,6 +567,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#计算图"><span class="nav-number">1.</span> <span class="nav-text">计算图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#张量"><span class="nav-number">2.</span> <span class="nav-text">张量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#会话"><span class="nav-number">3.</span> <span class="nav-text">会话</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#前向传播示例"><span class="nav-number">4.</span> <span class="nav-text">前向传播示例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
