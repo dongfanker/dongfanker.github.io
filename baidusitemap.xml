@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://dongfanker.github.io/2018/11/09/measure/</loc>
-    <lastmod>2018-11-09T01:24:01.050Z</lastmod>
+    <lastmod>2018-11-09T04:38:54.685Z</lastmod>
     <data>
         <display>
         <title>机器学习评价指标</title>
@@ -25,10 +25,10 @@
     
   <url>
     <loc>https://dongfanker.github.io/2018/11/09/tensorboard/</loc>
-    <lastmod>2018-11-09T01:07:07.099Z</lastmod>
+    <lastmod>2018-11-09T01:29:22.844Z</lastmod>
     <data>
         <display>
-        <title></title>
+        <title>Tensorboard的使用</title>
         <pubTime>2018-11-08T16:44:02.000Z</pubTime>
         
         <tag>tensorflow</tag>
