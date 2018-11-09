@@ -5,10 +5,30 @@
     
   <url>
     <loc>https://dongfanker.github.io/2018/11/09/measure/</loc>
-    <lastmod>2018-11-09T01:01:58.662Z</lastmod>
+    <lastmod>2018-11-09T01:05:42.703Z</lastmod>
     <data>
         <display>
         <title>机器学习评价指标</title>
+        <pubTime>2018-11-08T16:44:02.000Z</pubTime>
+        
+        <tag>Machine Learing</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="https://dongfanker.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dongfanker.github.io/2018/11/09/tensorboard/</loc>
+    <lastmod>2018-11-09T01:05:37.896Z</lastmod>
+    <data>
+        <display>
+        <title></title>
         <pubTime>2018-11-08T16:44:02.000Z</pubTime>
         
         <tag>Machine Learing</tag>
