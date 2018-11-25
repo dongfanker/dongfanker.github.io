@@ -4,19 +4,39 @@
 
     
   <url>
-    <loc>https://dongfanker.github.io/2018/11/09/measure/</loc>
-    <lastmod>2018-11-09T04:42:00.654Z</lastmod>
+    <loc>https://dongfanker.github.io/2018/11/08/tfbase/</loc>
+    <lastmod>2018-11-24T03:56:46.742Z</lastmod>
     <data>
         <display>
-        <title>机器学习评价指标</title>
-        <pubTime>2018-11-08T16:44:02.000Z</pubTime>
+        <title>Tensorflow 基本概念</title>
+        <pubTime>2018-11-07T16:44:02.000Z</pubTime>
         
-        <tag>Machine Learing</tag>
+        <tag>tensorflow</tag>
          
          
            
              
-              <breadCrumb title="机器学习" url="https://dongfanker.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="深度学习" url="https://dongfanker.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dongfanker.github.io/2018/11/15/Matlab/</loc>
+    <lastmod>2018-11-15T16:59:46.528Z</lastmod>
+    <data>
+        <display>
+        <title>Matlab的使用笔记</title>
+        <pubTime>2018-11-14T16:44:02.000Z</pubTime>
+        
+        <tag>Matlab</tag>
+         
+         
+           
+             
+              <breadCrumb title="Matlab" url="https://dongfanker.github.io/categories/Matlab/"/>
           
         </display>
     </data>
@@ -25,7 +45,7 @@
     
   <url>
     <loc>https://dongfanker.github.io/2018/11/09/tensorboard/</loc>
-    <lastmod>2018-11-09T01:29:22.844Z</lastmod>
+    <lastmod>2018-11-11T15:00:34.281Z</lastmod>
     <data>
         <display>
         <title>Tensorboard的使用</title>
@@ -46,19 +66,19 @@
 
     
   <url>
-    <loc>https://dongfanker.github.io/2018/11/08/tfbase/</loc>
-    <lastmod>2018-11-08T16:11:59.907Z</lastmod>
+    <loc>https://dongfanker.github.io/2018/11/09/measure/</loc>
+    <lastmod>2018-11-09T04:42:00.654Z</lastmod>
     <data>
         <display>
-        <title>Tensorflow 基本概念</title>
-        <pubTime>2018-11-07T16:44:02.000Z</pubTime>
+        <title>机器学习评价指标</title>
+        <pubTime>2018-11-08T16:44:02.000Z</pubTime>
         
-        <tag>tensoflow</tag>
+        <tag>Machine Learing</tag>
          
          
            
              
-              <breadCrumb title="深度学习" url="https://dongfanker.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="机器学习" url="https://dongfanker.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
