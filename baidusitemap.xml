@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://dongfanker.github.io/2018/11/08/tfbase/</loc>
-    <lastmod>2018-11-24T03:56:46.742Z</lastmod>
+    <lastmod>2019-04-04T11:07:02.689Z</lastmod>
     <data>
         <display>
         <title>Tensorflow 基本概念</title>
@@ -17,6 +17,46 @@
            
              
               <breadCrumb title="深度学习" url="https://dongfanker.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dongfanker.github.io/2018/12/23/bag9/</loc>
+    <lastmod>2018-12-23T13:19:36.442Z</lastmod>
+    <data>
+        <display>
+        <title>背包九讲动态规划</title>
+        <pubTime>2018-12-22T16:44:02.000Z</pubTime>
+        
+        <tag>动态规划</tag>
+         
+         
+           
+             
+              <breadCrumb title="动态规划" url="https://dongfanker.github.io/categories/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dongfanker.github.io/2018/12/14/gcn/</loc>
+    <lastmod>2018-12-23T12:58:39.756Z</lastmod>
+    <data>
+        <display>
+        <title>GCN相关文章选读</title>
+        <pubTime>2018-12-13T16:44:02.000Z</pubTime>
+        
+        <tag>GCN</tag>
+         
+         
+           
+             
+              <breadCrumb title="GCN" url="https://dongfanker.github.io/categories/GCN/"/>
           
         </display>
     </data>
