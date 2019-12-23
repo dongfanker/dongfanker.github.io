@@ -253,28 +253,133 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dongfanker.github.io/2019/04/27/spring/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dongfanker">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/me1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="东方客's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">Spring, Spring Boot, Restful, Docker</h1>
-
-
-	<div class="post-meta">
-		<div class="post-description">Spring, Spring Boot, Restful，Docker的要点梳理</div>
-	</div>
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h3 id="一、Restful"><a href="#一、Restful" class="headerlink" title="一、Restful"></a>一、Restful</h3><p>一个程序规范，一般会与http联系在一起。能够增加url的复用性，降低url的复杂性。<br>与GET、POST、PUT、DELETE等操作配合实现交互。</p>
+          <h1 class="post-title" itemprop="name headline">Spring, Spring Boot, Restful, Docker</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-27T19:28:20+08:00">
+                2019-04-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Spring/" itemprop="url" rel="index">
+                    <span itemprop="name">Spring</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/04/27/spring/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/27/spring/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/04/27/spring/" class="leancloud_visitors" data-flag-title="Spring, Spring Boot, Restful, Docker">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  Spring, Spring Boot, Restful，Docker的要点梳理
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody" style="text-align:center">
+
+      
+      
+
+      
+        <h3 id="一、Restful"><a href="#一、Restful" class="headerlink" title="一、Restful"></a>一、Restful</h3><p>一个程序规范，一般会与http联系在一起。能够增加url的复用性，降低url的复杂性。<br>与GET、POST、PUT、DELETE等操作配合实现交互。</p>
 <h3 id="二、Spring"><a href="#二、Spring" class="headerlink" title="二、Spring"></a>二、Spring</h3><p>一个JAVA框架, 通过高内聚的代码细节的隐藏，使得用户代码更加松耦合。</p>
 <h4 id="IOC"><a href="#IOC" class="headerlink" title="IOC"></a>IOC</h4><p>Spring的重要逻辑之一，<strong>反转控制</strong>，将对象实例化的控制转移到外部代码中实现。常见的实现为DI(依赖注入)，外部代码将依赖对象产生后注入到内部代码里。<br>可以通过注解@autowired实现。</p>
 <h4 id="Bean"><a href="#Bean" class="headerlink" title="Bean"></a>Bean</h4><p>Spring的重要概念之一，是<strong>能够暴露给Spring框架的特殊的类</strong>。可以通过注解@Controller、@Service、@repository产生，反转控制都是由Bean来完成的</p>
@@ -282,15 +387,69 @@
 <h3 id="三、Spring-Boot"><a href="#三、Spring-Boot" class="headerlink" title="三、Spring Boot"></a>三、Spring Boot</h3><p>将Tomcat，Jetty等容器封装起来，使用application.yml文件控制，免去了大量使用中的初始化操作，使得Spring更易于使用。</p>
 <h3 id="四、Docker"><a href="#四、Docker" class="headerlink" title="四、Docker"></a>四、Docker</h3><p>与虚拟机相比，虚拟机是将虚拟机系统与宿主操作系统分离，使用虚拟监视器来分隔，而Docker共用宿主的操作系统，因而不支持跨平台，但提供相对隔离的环境，同时有更高的效率。</p>
 
-        
-      </div>
-      
-      
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Spring/" rel="tag"># Spring</a>
+          
+            <a href="/tags/Spring-Boot/" rel="tag"># Spring Boot</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/15/Matlab/" rel="next" title="Matlab的使用笔记">
+                <i class="fa fa-chevron-left"></i> Matlab的使用笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/04/encoder-decoder/" rel="prev" title="Mysterical Parameters! 超参数调优的几点玄学">
+                Mysterical Parameters! 超参数调优的几点玄学 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 

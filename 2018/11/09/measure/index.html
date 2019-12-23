@@ -253,28 +253,133 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dongfanker.github.io/2018/11/09/measure/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dongfanker">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/me1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="东方客's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">机器学习评价指标</h1>
-
-
-	<div class="post-meta">
-		<div class="post-description">机器学习中的准确率、精确率、召回率以及F度量</div>
-	</div>
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h4 id="分类问题的评价指标"><a href="#分类问题的评价指标" class="headerlink" title="分类问题的评价指标"></a>分类问题的评价指标</h4><table>
+          <h1 class="post-title" itemprop="name headline">机器学习评价指标</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-09T00:44:02+08:00">
+                2018-11-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/09/measure/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/09/measure/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/11/09/measure/" class="leancloud_visitors" data-flag-title="机器学习评价指标">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  机器学习中的准确率、精确率、召回率以及F度量
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody" style="text-align:center">
+
+      
+      
+
+      
+        <h4 id="分类问题的评价指标"><a href="#分类问题的评价指标" class="headerlink" title="分类问题的评价指标"></a>分类问题的评价指标</h4><table>
 <thead>
 <tr>
 <th>*</th>
@@ -301,15 +406,67 @@
 <p>综合评价指标F-measure是精确度和召回率的综合<br>$$F = \frac{(a^2+1)PR}{(a^2)P+R}$$<br>当a = 0时，为F1:<br>$$F = \frac{PR}{P+R}$$</p>
 <h4 id="机器翻译质量评测算法"><a href="#机器翻译质量评测算法" class="headerlink" title="机器翻译质量评测算法"></a>机器翻译质量评测算法</h4><p>使用BLEU来衡量算法的准确程度<br>计算公式如下<br>$$BLEU = BP·exp(\sum_1^N w_nlog(p_n))$$<br>其中BP = $\begin{cases}1\space\space\space\space\space\space\space\space\space\space\space\space\space\space if \space c&gt;r \e^{(1-r/c)}\space\space\space\space if \space c \le r\end{cases}<br>$<br>c = len(word of machine)<br>r = len(word of reference)<br>而 $$p_n = \frac{\sum_{C\in Candidate}\sum_{n-gram\in C}Count_{clip}(n-gram)}{\sum_{C^{‘}\in Candidate}\sum_{n-gram\in C’}Count_(n-gram)}$$</p>
 
-        
-      </div>
-      
-      
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Machine-Learing/" rel="tag"># Machine Learing</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/09/tensorboard/" rel="next" title="Tensorboard的使用">
+                <i class="fa fa-chevron-left"></i> Tensorboard的使用
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/15/Matlab/" rel="prev" title="Matlab的使用笔记">
+                Matlab的使用笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 

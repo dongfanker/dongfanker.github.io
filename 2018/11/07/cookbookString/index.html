@@ -253,28 +253,133 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dongfanker.github.io/2018/11/07/cookbookString/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dongfanker">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/me1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="东方客's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">字符串和文本处理</h1>
-
-
-	<div class="post-meta">
-		<div class="post-description">python的字符串与文本处理的技巧</div>
-	</div>
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h4 id="字符串的切分"><a href="#字符串的切分" class="headerlink" title="字符串的切分"></a>字符串的切分</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">line = <span class="string">"爸爸 妈妈; 儿子, 女儿,弟弟, 妹妹"</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">print(re.split(<span class="string">r'[;,\s]\s*'</span>, line))</span><br><span class="line">print(re.split(<span class="string">r'(;|,|\s)\s*'</span>, line))</span><br><span class="line">fields = re.split(<span class="string">r'(;|,|\s)\s*'</span>, line)</span><br><span class="line">print(fields[::<span class="number">2</span>])</span><br><span class="line">print(fields[<span class="number">1</span>::<span class="number">2</span>])</span><br></pre></td></tr></table></figure>
+          <h1 class="post-title" itemprop="name headline">字符串和文本处理</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-07T00:44:02+08:00">
+                2018-11-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/自然语言处理/" itemprop="url" rel="index">
+                    <span itemprop="name">自然语言处理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/07/cookbookString/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/07/cookbookString/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/11/07/cookbookString/" class="leancloud_visitors" data-flag-title="字符串和文本处理">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  python的字符串与文本处理的技巧
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody" style="text-align:center">
+
+      
+      
+
+      
+        <h4 id="字符串的切分"><a href="#字符串的切分" class="headerlink" title="字符串的切分"></a>字符串的切分</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">line = <span class="string">"爸爸 妈妈; 儿子, 女儿,弟弟, 妹妹"</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">print(re.split(<span class="string">r'[;,\s]\s*'</span>, line))</span><br><span class="line">print(re.split(<span class="string">r'(;|,|\s)\s*'</span>, line))</span><br><span class="line">fields = re.split(<span class="string">r'(;|,|\s)\s*'</span>, line)</span><br><span class="line">print(fields[::<span class="number">2</span>])</span><br><span class="line">print(fields[<span class="number">1</span>::<span class="number">2</span>])</span><br></pre></td></tr></table></figure>
 <p>result:<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">['爸爸', '妈妈', '儿子', '女儿', '弟弟', '妹妹']</span><br><span class="line">['爸爸', ' ', '妈妈', ';', '儿子', ',', '女儿', ',', '弟弟', ',', '妹妹']</span><br><span class="line">['爸爸', '妈妈', '儿子', '女儿', '弟弟', '妹妹']</span><br><span class="line">[' ', ';', ',', ',', ',']</span><br></pre></td></tr></table></figure></p>
 <p>总结: “\s” 代表空格，一定范围的符号用[]、(…|…|…)框起来，使用[]会去掉匹配的文本，而(…|…|…)会保留匹配的分组，可变长(0-n)的字段可以加*l，在末尾的field的切片中，最后一位代表step</p>
 <h4 id="字符串的开头与结尾匹配"><a href="#字符串的开头与结尾匹配" class="headerlink" title="字符串的开头与结尾匹配"></a>字符串的开头与结尾匹配</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">filenames = [<span class="string">"Makefile"</span>, <span class="string">"foo.c"</span>, <span class="string">"bar.py"</span>, <span class="string">"spam.c"</span>, <span class="string">"spam.h"</span>]</span><br><span class="line">print(any(name.endswith(<span class="string">".py"</span>) <span class="keyword">for</span> name <span class="keyword">in</span> filenames))</span><br><span class="line">print([name <span class="keyword">for</span> name <span class="keyword">in</span> filenames <span class="keyword">if</span> name.endswith((<span class="string">".c"</span>, <span class="string">".h"</span>))])</span><br></pre></td></tr></table></figure>
@@ -285,15 +390,67 @@
 <p>result<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">21</span></span><br><span class="line">['<span class="number">11</span>/<span class="number">27</span>/<span class="number">2012</span>', '<span class="number">3</span>/<span class="number">13</span>/<span class="number">2013</span>']</span><br><span class="line">['<span class="number">11</span>/<span class="number">27</span>/<span class="number">2012</span>', '<span class="number">3</span>/<span class="number">13</span>/<span class="number">2013</span>']</span><br></pre></td></tr></table></figure></p>
 <p>find可以返回第一个匹配的位置，如果想要找到所有的匹配，可以使用findall，一方面可以直接使用，另一方面可以将模式字符串预编译为模式对象</p>
 
-        
-      </div>
-      
-      
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/string-process/" rel="tag"># string process</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/04/trie/" rel="next" title="Trie树">
+                <i class="fa fa-chevron-left"></i> Trie树
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/08/tfbase/" rel="prev" title="Tensorflow 基本概念">
+                Tensorflow 基本概念 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
