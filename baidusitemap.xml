@@ -3,13 +3,12 @@
 
 
     
-    
   <url>
-    <loc>https://dongfanker.github.io/2019/12/21/Commonsence%E6%A2%B3%E7%90%86/</loc>
-    <lastmod>2019-12-21T10:09:15.741Z</lastmod>
+    <loc>https://dongfanker.github.io/2019/12/21/Commonsence/</loc>
+    <lastmod>2019-12-23T14:06:52.336Z</lastmod>
     <data>
         <display>
-        <title>Commonsense Problem</title>
+        <title>Commonsense Validation and Explanation</title>
         <pubTime>2019-12-20T16:00:00.000Z</pubTime>
         
         <tag>AI</tag>
@@ -19,12 +18,13 @@
          
            
              
-              <breadCrumb title="Paoer" url="https://dongfanker.github.io/categories/Paoer/"/>
+              <breadCrumb title="NLP" url="https://dongfanker.github.io/categories/NLP/"/>
           
         </display>
     </data>
     </url>
 
+    
     
   <url>
     <loc>https://dongfanker.github.io/2019/12/04/indent/</loc>

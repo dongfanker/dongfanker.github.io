@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -86,7 +86,7 @@
 <meta property="og:url" content="https://dongfanker.github.io/2018/11/04/kneser-ney/index.html">
 <meta property="og:site_name" content="东方客&#39;s Blog">
 <meta property="og:description" content="NLP中比较advance的smooth方法">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2018-11-07T04:31:37.225Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Good-Turing、Absolute、kneser-ney smooth">
@@ -106,7 +106,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -138,7 +138,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -188,7 +188,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -198,7 +198,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Categories
           </a>
         </li>
       
@@ -208,7 +208,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -218,7 +218,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -228,17 +228,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-search">
-          <a href="/search" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-search"></i> <br />
-            
-            搜索
+            About
           </a>
         </li>
       
@@ -263,133 +253,28 @@
 
   <div id="posts" class="posts-expand">
     
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://dongfanker.github.io/2018/11/04/kneser-ney/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dongfanker">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/me1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="东方客's Blog">
-    </span>
-
     
+    
+    <div class="post-block page">
       <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">Good-Turing、Absolute、kneser-ney smooth</h1>
-        
+	<h1 class="post-title" itemprop="name headline">Good-Turing、Absolute、kneser-ney smooth</h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-04T00:44:02+08:00">
-                2018-11-04
-              </time>
-            
 
-            
+	<div class="post-meta">
+		<div class="post-description">NLP中比较advance的smooth方法</div>
+	</div>
 
-            
-          </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/自然语言处理/" itemprop="url" rel="index">
-                    <span itemprop="name">自然语言处理</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/11/04/kneser-ney/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/04/kneser-ney/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/11/04/kneser-ney/" class="leancloud_visitors" data-flag-title="Good-Turing、Absolute、kneser-ney smooth">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-              <div class="post-description">
-                  NLP中比较advance的smooth方法
-              </div>
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+</header>
 
       
       
-
       
-        <h3 id="Good-Turing-smoothing"><a href="#Good-Turing-smoothing" class="headerlink" title="Good-Turing smoothing"></a>Good-Turing smoothing</h3><p>Good-Turing基本思想是：用观察计数较高的N元语法数重新估计概率量的大小，并把它指派给那些具有零计数或者较低计数的N元语法。<br>公式:</p>
+      <div class="post-body">
+        
+        
+          <h3 id="Good-Turing-smoothing"><a href="#Good-Turing-smoothing" class="headerlink" title="Good-Turing smoothing"></a>Good-Turing smoothing</h3><p>Good-Turing基本思想是：用观察计数较高的N元语法数重新估计概率量的大小，并把它指派给那些具有零计数或者较低计数的N元语法。<br>公式:</p>
 <p>$$c^{×} = \frac{(c+1)N_{c+1}}{N_c} $$</p>
 <p>其中c为某个N-gram出现的频数, $N_c$ 为出现次数为c的N-Gram的词组的个数，$c^×$为Good-Turing平滑计数<br>例子:对于a = [A,A,A,B,B,C,D,E] sum(len(a)) = 7<br>$c_A = 3$    $c_C = 2$</p>
 <p>$c_B = c_D = c_E = 1$</p>
@@ -407,69 +292,15 @@
 <h3 id="Absolute-discounting"><a href="#Absolute-discounting" class="headerlink" title="Absolute discounting"></a>Absolute discounting</h3><p>点击<a href="https://blog.csdn.net/qq_39492317/article/details/83753429" target="_blank" rel="noopener">此链接</a>跳转</p>
 <h3 id="Kneser-Ney-smoothing"><a href="#Kneser-Ney-smoothing" class="headerlink" title="Kneser-Ney smoothing"></a>Kneser-Ney smoothing</h3><p>点击<a href="https://blog.csdn.net/qq_39492317/article/details/83753429" target="_blank" rel="noopener">此链接</a>跳转</p>
 
+        
+      </div>
+      
+      
       
     </div>
     
     
     
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/smooth/" rel="tag"># smooth</a>
-          
-            <a href="/tags/kneser-ney/" rel="tag"># kneser-ney</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/09/03/vue-bus/" rel="next" title="Vue项目bus与vuex的使用">
-                <i class="fa fa-chevron-left"></i> Vue项目bus与vuex的使用
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/04/trie/" rel="prev" title="Trie树">
-                Trie树 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
@@ -507,10 +338,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
+            Overview
           </li>
         </ul>
       
@@ -535,7 +366,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">22</span>
-                  <span class="site-state-item-name">日志</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
@@ -545,8 +376,8 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">13</span>
-                  <span class="site-state-item-name">分类</span>
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">categories</span>
                 </a>
               </div>
             
@@ -557,7 +388,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">25</span>
-                  <span class="site-state-item-name">标签</span>
+                  <span class="site-state-item-name">tags</span>
                 </a>
               </div>
             
