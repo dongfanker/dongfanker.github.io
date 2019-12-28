@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="东方客&#39;s Blog">
 <meta property="og:description" content="NLP中比较advance的smooth方法">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-28T16:54:38.835Z">
+<meta property="og:updated_time" content="2019-12-28T18:04:53.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Good-Turing、Absolute、kneser-ney smooth">
 <meta name="twitter:description" content="NLP中比较advance的smooth方法">
@@ -390,9 +390,15 @@
 <li>也可以在较大的计数的时候使用$F(r) = ar^b $,其中a，b为参数，b&lt;-1</li>
 </ol>
 <p>最终会出现概率之和不为0的情况，这时候要进行归一化，固定没有见过的结果的概率，将已经见过的概率之和归一化使得共同的概率结果为1<br>归一化例子可见于<a href="https://www.csd.uwo.ca/courses/CS4442b/L9-NLP-LangModels.pdf" target="_blank" rel="noopener">L9-NLP-LangModels.pdf</a>第64页</p>
-<h3 id="Absolute-discounting"><a href="#Absolute-discounting" class="headerlink" title="Absolute discounting"></a>Absolute discounting</h3><p>由于在此处的公式显示不够清楚，我将它放到了CDSN上。点击<a href="https://blog.csdn.net/qq_39492317/article/details/83753429" target="_blank" rel="noopener">此链接</a>跳转</p>
-<h3 id="Kneser-Ney-smoothing"><a href="#Kneser-Ney-smoothing" class="headerlink" title="Kneser-Ney smoothing"></a>Kneser-Ney smoothing</h3><p>点击<a href="https://blog.csdn.net/qq_39492317/article/details/83753429" target="_blank" rel="noopener">此链接</a>跳转</p>
-
+<h3 id="Absolute-discounting"><a href="#Absolute-discounting" class="headerlink" title="Absolute discounting"></a>Absolute discounting</h3><p>一般的interpolation是利用高阶的模型的$P_MLE$乘以一个$\lambda$,而此处是从每个非零计数中减掉一个固定的$\delta \in (0,1)$,一般取$\delta = 0.75$<br>在bigram中，公式为</p>
+<script type="math/tex; mode=display">P_{AD}(w_i|w_{i-1}) = \frac{c(w_{i-1},w_i)-\delta}{c(w_{i-1})}+\lambda(w_{i-1})P(w))</script><p>其中$\lambda(w_{i-1})为插值权重系数$<br>于是完整的公式就是</p>
+<script type="math/tex; mode=display">p_{abs}(w_i|w^i_{i-n+1}) = \frac{max\{c(w^i_{i-n+1})-\delta,0\}}{\sum_{w_i}c(w^i_{i-n+1})}+(1-\lambda_{w^{i-1}_{i-n+1}}p_{ab}(w_i|w^{i-1}{i-n+2}))</script><p>为了使得结果的总和为1</p>
+<script type="math/tex; mode=display">1 - \lambda _ { w _ { i - n + 1 } } ^ { i - 1 } = \frac { \delta } { \sum _ { w _ { i } } c ( w _ { i - n + 1 } ^ { i } ) } N _ { 1 + } ( w _ { i - n + 1 } ^ { i - 1 }  \mathbf { \bullet } )</script><p>其中</p>
+<script type="math/tex; mode=display">N _ { 1 + } \left( w _ { i - n + 1 } ^ { i - 1 }  \bullet \right) = \left| \left\{ w _ { i } : c \left( w _ { i - n + 1 } ^ { i - 1 } w _ { i } \right) > 0 \right\} \right|</script><h3 id="Kneser-Ney-smoothing"><a href="#Kneser-Ney-smoothing" class="headerlink" title="Kneser-Ney smoothing"></a>Kneser-Ney smoothing</h3><p>bigram下的公式:</p>
+<script type="math/tex; mode=display">p _ { K N } \left( w _ { i } | w _ { i - 1 } \right) = \frac { \max \left( c \left( w _ { i - 1 } , w _ { i } \right) - \delta , 0 \right) } { \sum _ { w ^ { \prime } } c \left( w _ { i - 1 } , w ^ { \prime } \right) } + \lambda _ { w _ { i - 1 } } p _ { K N } \left( w _ { i } \right)</script><p>其中</p>
+<script type="math/tex; mode=display">p _ { K N } \left( w _ { i } \right) = \frac { \left| \left\{ w ^ { \prime } : 0 < c \left( w ^ { \prime } , w _ { i } \right) \right\} \right| } { \left| \left\{ \left( w ^ { \prime } , w ^ { \prime \prime } \right) : 0 < c \left( w ^ { \prime } , w ^ { \prime \prime } \right) \right\} \right| }</script><p>为的是求解在一个不熟悉的上下文中看见单词$w_i$的可能性,这使用$w_i$在出现在所有单词的次数和除以所有bigram的和来衡量<br>减掉一个固定的$\delta \in (0,1)$,一般取$\delta = 0.75$<br>$\lambda_{w_{i-1}}$是用来平衡使得条件概率$p _ { K N } ( w _ { i } | w _ { i - 1 } )$的总和为1的系数<br>得出满足条件的$\lambda_{w_{i-1}}$结果为</p>
+<script type="math/tex; mode=display">\lambda _ { w _ { i - 1 } } = \frac { \delta } { \sum _ { w ^ { \prime } } c \left( w _ { i - 1 } , w ^ { \prime } \right) } \left| \left\{ w ^ { \prime } : 0 < c \left( w _ { i - 1 } , w ^ { \prime } \right) \right\} \right|</script><p>可以推广到n-gram</p>
+<script type="math/tex; mode=display">p _ { K N } \left( w _ { i } | w _ { i - n + 1 } ^ { i - 1 } \right) = \frac { \max \left( c \left( w _ { i - n + 1 } ^ { i - 1 } , w _ { i } \right) - \delta , 0 \right) } { \sum _ { w ^ { \prime } } c \left( w _ { i - n + 1 } ^ { i - 1 } , w ^ { \prime } \right) } + \delta \frac { \left| \left\{ w ^ { \prime } : 0 < c \left( w _ { i - n + 1 } ^ { i - 1 } , w ^ { \prime } \right) \right\} \right| } { \sum _ { w _ { i } } c \left( w _ { i - n + 1 } ^ { i } \right) } p _ { K N } \left( w _ { i } | w _ { i - n + 2 } ^ { i - 1 } \right)</script>
       
     </div>
     
