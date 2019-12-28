@@ -380,15 +380,11 @@
 
       
         <h3 id="Good-Turing-smoothing"><a href="#Good-Turing-smoothing" class="headerlink" title="Good-Turing smoothing"></a>Good-Turing smoothing</h3><p>Good-Turing基本思想是：用观察计数较高的N元语法数重新估计概率量的大小，并把它指派给那些具有零计数或者较低计数的N元语法。<br>公式:</p>
-<p>$$c^{×} = \frac{(c+1)N_{c+1}}{N_c} $$</p>
-<p>其中c为某个N-gram出现的频数, $N_c$ 为出现次数为c的N-Gram的词组的个数，$c^×$为Good-Turing平滑计数<br>例子:对于a = [A,A,A,B,B,C,D,E] sum(len(a)) = 7<br>$c_A = 3$    $c_C = 2$</p>
+<script type="math/tex; mode=display">c^{×} = \frac{(c+1)N_{c+1}}{N_c}</script><p>其中c为某个N-gram出现的频数, $N_c$ 为出现次数为c的N-Gram的词组的个数，$c^×$为Good-Turing平滑计数<br>例子:对于a = [A,A,A,B,B,C,D,E] sum(len(a)) = 7<br>$c_A = 3$    $c_C = 2$</p>
 <p>$c_B = c_D = c_E = 1$</p>
 <p>$N_1=4$ $N_2=1$ $N_3=1$ </p>
 <p>thus </p>
-<p>$$c^{×} = 4 × \frac{0}{3} = 0$$</p>
-<p>$$c^×_B = 3×\frac{1}{1} = 3$$</p>
-<p>$$c^×_C = c^×_D = c^×_E = 2×\frac{1}{4} = \frac{1}{2}$$</p>
-<p>（注意在他们求概率的时候都需要除以N = 7）<br>然而这样会导致最高频率的结果最后的计数为0，解决方法如下</p>
+<script type="math/tex; mode=display">c^{×} = 4 × \frac{0}{3} = 0</script><script type="math/tex; mode=display">c^×_B = 3×\frac{1}{1} = 3</script><script type="math/tex; mode=display">c^×_C = c^×_D = c^×_E = 2×\frac{1}{4} = \frac{1}{2}</script><p>（注意在他们求概率的时候都需要除以N = 7）<br>然而这样会导致最高频率的结果最后的计数为0，解决方法如下</p>
 <ol>
 <li>可以对于较低的计数使用$P_{GT}$,而对于较高的计数直接使用$P_{MLE} = \frac{c}{N}$</li>
 <li>也可以在较大的计数的时候使用$F(r) = ar^b $,其中a，b为参数，b&lt;-1</li>
@@ -428,8 +424,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/03/vue-bus/" rel="next" title="Vue项目bus与vuex的使用">
-                <i class="fa fa-chevron-left"></i> Vue项目bus与vuex的使用
+              <a href="/2018/11/04/trie/" rel="next" title="Trie树">
+                <i class="fa fa-chevron-left"></i> Trie树
               </a>
             
           </div>
@@ -438,8 +434,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/04/trie/" rel="prev" title="Trie树">
-                Trie树 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/07/cookbookString/" rel="prev" title="字符串和文本处理">
+                字符串和文本处理 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -535,7 +531,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -546,7 +542,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
