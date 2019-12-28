@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://dongfanker.github.io/2019/12/04/encoder-decoder/</loc>
+    <lastmod>2019-12-28T13:37:56.963Z</lastmod>
+    <data>
+        <display>
+        <title>RNN 的 Dropout 参数建议</title>
+        <pubTime>2019-12-03T16:00:00.000Z</pubTime>
+        
+        <tag>RNN</tag>
+         
+        <tag>Dropout</tag>
+         
+         
+           
+             
+              <breadCrumb title="Trick" url="https://dongfanker.github.io/categories/Trick/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://dongfanker.github.io/2019/12/27/doctor/</loc>
     <lastmod>2019-12-27T06:00:34.272Z</lastmod>
     <data>
@@ -67,28 +89,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>https://dongfanker.github.io/2019/12/04/encoder-decoder/</loc>
-    <lastmod>2019-12-04T00:38:58.036Z</lastmod>
-    <data>
-        <display>
-        <title>Mysterical Parameters! 超参数调优的几点玄学</title>
-        <pubTime>2019-12-03T16:00:00.000Z</pubTime>
-        
-        <tag>RNN</tag>
-         
-        <tag>Dropout</tag>
-         
-         
-           
-             
-              <breadCrumb title="Trick" url="https://dongfanker.github.io/categories/Trick/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://dongfanker.github.io/2019/04/27/spring/</loc>

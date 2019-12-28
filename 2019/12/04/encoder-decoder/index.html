@@ -82,14 +82,14 @@
 <meta name="description" content="The selection of dropout rate for encoder-decoder mechanism">
 <meta name="keywords" content="RNN,Dropout">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mysterical Parameters! 超参数调优的几点玄学">
+<meta property="og:title" content="RNN 的 Dropout 参数建议">
 <meta property="og:url" content="https://dongfanker.github.io/2019/12/04/encoder-decoder/index.html">
 <meta property="og:site_name" content="东方客&#39;s Blog">
 <meta property="og:description" content="The selection of dropout rate for encoder-decoder mechanism">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-04T00:38:58.036Z">
+<meta property="og:updated_time" content="2019-12-28T13:37:56.963Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mysterical Parameters! 超参数调优的几点玄学">
+<meta name="twitter:title" content="RNN 的 Dropout 参数建议">
 <meta name="twitter:description" content="The selection of dropout rate for encoder-decoder mechanism">
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>Mysterical Parameters! 超参数调优的几点玄学 | 东方客's Blog</title>
+  <title>RNN 的 Dropout 参数建议 | 东方客's Blog</title>
   
 
 
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Mysterical Parameters! 超参数调优的几点玄学</h1>
+          <h1 class="post-title" itemprop="name headline">RNN 的 Dropout 参数建议</h1>
         
 
         <div class="post-meta">
@@ -344,7 +344,7 @@
 
           
           
-             <span id="/2019/12/04/encoder-decoder/" class="leancloud_visitors" data-flag-title="Mysterical Parameters! 超参数调优的几点玄学">
+             <span id="/2019/12/04/encoder-decoder/" class="leancloud_visitors" data-flag-title="RNN 的 Dropout 参数建议">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -382,7 +382,6 @@
         <h3 id="Dropout"><a href="#Dropout" class="headerlink" title="Dropout"></a>Dropout</h3><p>Srivastava et al. (2014) applied dropout to feed forward neural network’s and RBM’s and noted a probability of dropout around <strong>0.5 for hidden units and 0.2 for inputs</strong> worked well for a variety of tasks.</p>
 <p>Reference: <a href="https://medium.com/@bingobee01/a-review-of-dropout-as-applied-to-rnns-72e79ecd5b7b" target="_blank" rel="noopener">A review of Dropout as applied to RNNs</a></p>
 <p>When I apply the 0.5 for hidden units and 0.2 for inputs, it works well. But it is not the case in decoder. <strong>In decoder, I would suggest not to use dropout</strong>.</p>
-<h3 id="Step-before-backward"><a href="#Step-before-backward" class="headerlink" title="Step before backward"></a>Step before backward</h3><p>If you wait several step before backward, use 8. That is only for RNN.</p>
 
       
     </div>
@@ -566,7 +565,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Dropout"><span class="nav-number">1.</span> <span class="nav-text">Dropout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-before-backward"><span class="nav-number">2.</span> <span class="nav-text">Step before backward</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Dropout"><span class="nav-number">1.</span> <span class="nav-text">Dropout</span></a></li></ol></div>
             
 
           </div>
