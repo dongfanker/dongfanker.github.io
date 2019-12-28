@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dongfanker.github.io/2019/12/04/RL/</loc>
+    
+    <lastmod>2019-12-28T17:25:41.639Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dongfanker.github.io/2018/11/04/kneser-ney/</loc>
+    
+    <lastmod>2019-12-28T16:54:38.835Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dongfanker.github.io/2019/12/04/encoder-decoder/</loc>
     
     <lastmod>2019-12-28T13:37:56.963Z</lastmod>
@@ -68,13 +82,6 @@
     <loc>https://dongfanker.github.io/2018/11/09/measure/</loc>
     
     <lastmod>2018-11-09T04:42:00.654Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dongfanker.github.io/2018/11/04/kneser-ney/</loc>
-    
-    <lastmod>2018-11-07T04:31:37.225Z</lastmod>
     
   </url>
   

@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>https://dongfanker.github.io/2019/12/04/RL/</loc>
+    <lastmod>2019-12-28T17:25:41.639Z</lastmod>
+    <data>
+        <display>
+        <title>强化学习精要总结（基础）</title>
+        <pubTime>2019-12-03T16:00:00.000Z</pubTime>
+        
+        <tag>Reinforcement Learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="Reinforcement Learning" url="https://dongfanker.github.io/categories/Reinforcement-Learning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dongfanker.github.io/2018/11/04/kneser-ney/</loc>
+    <lastmod>2019-12-28T16:54:38.835Z</lastmod>
+    <data>
+        <display>
+        <title>Good-Turing、Absolute、kneser-ney smooth</title>
+        <pubTime>2018-11-03T16:44:02.000Z</pubTime>
+        
+        <tag>smooth</tag>
+         
+        <tag>kneser-ney</tag>
+         
+         
+           
+             
+              <breadCrumb title="自然语言处理" url="https://dongfanker.github.io/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://dongfanker.github.io/2019/12/04/encoder-decoder/</loc>
     <lastmod>2019-12-28T13:37:56.963Z</lastmod>
     <data>
@@ -188,28 +230,6 @@
            
              
               <breadCrumb title="机器学习" url="https://dongfanker.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dongfanker.github.io/2018/11/04/kneser-ney/</loc>
-    <lastmod>2018-11-07T04:31:37.225Z</lastmod>
-    <data>
-        <display>
-        <title>Good-Turing、Absolute、kneser-ney smooth</title>
-        <pubTime>2018-11-03T16:44:02.000Z</pubTime>
-        
-        <tag>smooth</tag>
-         
-        <tag>kneser-ney</tag>
-         
-         
-           
-             
-              <breadCrumb title="自然语言处理" url="https://dongfanker.github.io/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
           
         </display>
     </data>

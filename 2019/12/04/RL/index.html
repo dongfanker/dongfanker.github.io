@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Vue," />
+  <meta name="keywords" content="Reinforcement Learning," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Vue项目v-for与数据的传递">
-<meta name="keywords" content="Vue">
+<meta name="description" content="Short Note, the comparison and development of RL methods">
+<meta name="keywords" content="Reinforcement Learning">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vue项目v-for、v-model的使用">
-<meta property="og:url" content="https://dongfanker.github.io/2018/08/23/Vueform/index.html">
+<meta property="og:title" content="强化学习精要总结（基础）">
+<meta property="og:url" content="https://dongfanker.github.io/2019/12/04/RL/index.html">
 <meta property="og:site_name" content="东方客&#39;s Blog">
-<meta property="og:description" content="Vue项目v-for与数据的传递">
+<meta property="og:description" content="Short Note, the comparison and development of RL methods">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-08-23T09:01:20.612Z">
+<meta property="og:updated_time" content="2019-12-28T17:25:41.639Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vue项目v-for、v-model的使用">
-<meta name="twitter:description" content="Vue项目v-for与数据的传递">
+<meta name="twitter:title" content="强化学习精要总结（基础）">
+<meta name="twitter:description" content="Short Note, the comparison and development of RL methods">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://dongfanker.github.io/2018/08/23/Vueform/"/>
+  <link rel="canonical" href="https://dongfanker.github.io/2019/12/04/RL/"/>
 
 
 
 
 
-  <title>Vue项目v-for、v-model的使用 | 东方客's Blog</title>
+  <title>强化学习精要总结（基础） | 东方客's Blog</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://dongfanker.github.io/2018/08/23/Vueform/">
+    <link itemprop="mainEntityOfPage" href="https://dongfanker.github.io/2019/12/04/RL/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dongfanker">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Vue项目v-for、v-model的使用</h1>
+          <h1 class="post-title" itemprop="name headline">强化学习精要总结（基础）</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-23T15:44:02+08:00">
-                2018-08-23
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-04T00:00:00+08:00">
+                2019-12-04
               </time>
             
 
@@ -317,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vue/" itemprop="url" rel="index">
-                    <span itemprop="name">Vue</span>
+                  <a href="/categories/Reinforcement-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Reinforcement Learning</span>
                   </a>
                 </span>
 
@@ -335,8 +335,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/08/23/Vueform/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/23/Vueform/" itemprop="commentCount"></span>
+                <a href="/2019/12/04/RL/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/12/04/RL/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -344,7 +344,7 @@
 
           
           
-             <span id="/2018/08/23/Vueform/" class="leancloud_visitors" data-flag-title="Vue项目v-for、v-model的使用">
+             <span id="/2019/12/04/RL/" class="leancloud_visitors" data-flag-title="强化学习精要总结（基础）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -362,7 +362,7 @@
 
           
               <div class="post-description">
-                  Vue项目v-for与数据的传递
+                  Short Note, the comparison and development of RL methods
               </div>
           
 
@@ -379,20 +379,26 @@
       
 
       
-        <h2 id="V-for"><a href="#V-for" class="headerlink" title="V-for"></a>V-for</h2><p>v-for既可以在data内的一个对象列表中循环，也可以在一个对象中循环</p>
-<ol>
-<li>当作为一个对象列表循环的时候，每个对象是一个字典，字典中的内容可以作为:key的循环索引</li>
-<li>当对一个对象进行循环的时候，会对对想的属性的内容依次循环展示（并不算有什么价值）</li>
-</ol>
-<h3 id="v-for-响应的内容更新"><a href="#v-for-响应的内容更新" class="headerlink" title="v-for 响应的内容更新"></a>v-for 响应的内容更新</h3><p> 可以使用vm.$set(vm.items, indexOfItem, newValue)对items第i个内容进行修改，并且v-for会实时响应更新，如果是items[i]则不行</p>
-<h3 id="利用过滤创立新数组"><a href="#利用过滤创立新数组" class="headerlink" title="利用过滤创立新数组"></a>利用过滤创立新数组</h3><p> 可以建立以下method<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">methods: &#123;</span><br><span class="line">  even: <span class="function"><span class="keyword">function</span> (<span class="params">numbers</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> numbers.filter(<span class="function"><span class="keyword">function</span> (<span class="params">number</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> number % <span class="number">2</span> === <span class="number">0</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>当进行引用的时候就使用even(numbers)来代表新数组</p>
-<h3 id="v-for-与-v-if-的合并使用"><a href="#v-for-与-v-if-的合并使用" class="headerlink" title="v-for 与 v-if 的合并使用"></a>v-for 与 v-if 的合并使用</h3><p>v-for 的优先级比 v-if 更高，这意味着 v-if 将分别重复运行于每个 v-for 循环中。也可以达到如上过滤效果。</p>
-<h2 id="V-model"><a href="#V-model" class="headerlink" title="V-model"></a>V-model</h2><p>v-model对数据进行动态绑定。</p>
-<ol>
-<li>特别的，对于特定的小组件比如列表中的某个选项，可以通过value来绑定的值，当它被选定时就会加入数组列表之中</li>
-<li>更特别的，对于checkbox来说，value就包含true和false</li>
-</ol>
+        <p>本博文假设基本的状态表示和动作表示都已经了解的情况下，对多个强化学习方法进行简要对比</p>
+<p>Major division: <strong>Value iteration</strong> and <strong>Policy iteration</strong></p>
+<h3 id="1-Value-Iteration"><a href="#1-Value-Iteration" class="headerlink" title="1. Value Iteration"></a>1. Value Iteration</h3><p>Dynamic Programming: when the model is fully known, it can be directly solved by Dynamic Programming.</p>
+<p>When the model is not solve, we need reinforcement learning.</p>
+<p>值迭代就是顺着动态规划的思路，只要我们将值估计出来，就能够进行规划了。</p>
+<h4 id="Generalized-Policy-Iteration-GPI"><a href="#Generalized-Policy-Iteration-GPI" class="headerlink" title="Generalized Policy Iteration (GPI)"></a>Generalized Policy Iteration (GPI)</h4><p>$V_{t+1}(s)=\mathbb{E}<em>{\pi}\left[r+\gamma V</em>{t}\left(s^{\prime}\right) | S_{t}=s\right]=\sum_{a} \pi(a | s) \sum_{s^{\prime}, r} P\left(s^{\prime}, r | s, a\right)\left(r+\gamma V_{k}\left(s^{\prime}\right)\right)$</p>
+<p>$Q_{\pi}(s, a)=\mathbb{E}\left[R_{t+1}+\gamma V_{\pi}\left(S_{t+1}\right) | S_{t}=s, A_{t}=a\right]=\sum_{s^{\prime}, r} P\left(s^{\prime}, r | s, a\right)\left(r+\gamma V_{\pi}\left(s^{\prime}\right)\right)$</p>
+<h4 id="Monte-Carlo-Methods"><a href="#Monte-Carlo-Methods" class="headerlink" title="Monte-Carlo Methods"></a>Monte-Carlo Methods</h4><p>使用采样出来的轨迹模拟上述公式<br>$V(s)=\frac{\sum_{t=1}^{T} 1\left[S_{t}=s\right] G_{t}}{\sum_{t=1}^{T} 1\left[S_{t}=s\right]}$     $Q(s, a)=\frac{\sum_{t=1}^{T} 1\left[S_{t}=s, A_{t}=a\right] G_{t}}{\sum_{t=1}^{T} 1\left[S_{t}=s, A_{t}=a\right]}$</p>
+<h4 id="Temporal-Difference-Learning"><a href="#Temporal-Difference-Learning" class="headerlink" title="Temporal-Difference Learning:"></a>Temporal-Difference Learning:</h4><p>估计量改为 $R_{t+1}+\gamma V\left(S_{t+1}\right)$，即可得到<br>$V\left(S_{t}\right) \leftarrow V\left(S_{t}\right)+\alpha\left(R_{t+1}+\gamma V\left(S_{t+1}\right)-V\left(S_{t}\right)\right)$<br>$Q\left(S_{t}, A_{t}\right) \leftarrow Q\left(S_{t}, A_{t}\right)+\alpha\left(R_{t+1}+\gamma Q\left(S_{t+1}, A_{t+1}\right)-Q\left(S_{t}, A_{t}\right)\right)$</p>
+<p>以下的方法皆为TD Learning的拓展：</p>
+<h4 id="SARSA-On-Policy-TD-control"><a href="#SARSA-On-Policy-TD-control" class="headerlink" title="SARSA: On-Policy TD control"></a>SARSA: On-Policy TD control</h4><p>使用$\varepsilon$ -greedy来获得动作，从而得到两次动作（行动策略$a, s_t$ 和 评估策略$a’,s_{t+1}’$）<br>$Q\left(S_{t}, A_{t}\right) \leftarrow Q\left(S_{t}, A_{t}\right)+\alpha\left(R_{t+1}+\gamma Q\left(S_{t+1}, A_{t+1}\right)-Q\left(S_{t}, A_{t}\right)\right)$</p>
+<h4 id="Q-Learning-Off-policy-TD-control"><a href="#Q-Learning-Off-policy-TD-control" class="headerlink" title="Q-Learning: Off-policy TD control"></a>Q-Learning: Off-policy TD control</h4><p>Off-policy 是指行动策略和评估策略不同，Q-learning的评估策略是贪婪的，公式对比极易看出<br>$Q\left(S_{t}, A_{t}\right) \leftarrow Q\left(S_{t}, A_{t}\right)+\alpha\left(R_{t+1}+\gamma \max <em>{a \in \mathcal{A}} Q\left(S</em>{t+1}, a\right)-Q\left(S_{t}, A_{t}\right)\right)_{-}$</p>
+<h3 id="2-Policy-Iteration"><a href="#2-Policy-Iteration" class="headerlink" title="2. Policy Iteration"></a>2. Policy Iteration</h3><p>Policy Iteration 完全是另一种解决方案，是去优化策略值函数的期望<br>$\mathcal{J}(\theta)=\sum_{s \in \mathcal{S}} d_{\pi_{\theta}}(s) V_{\pi_{\theta}}(s)=\sum_{s \in \mathcal{S}}\left(d_{\pi_{\theta}}(s) \sum_{a \in \mathcal{A}} \pi(a | s, \theta) Q_{\pi}(s, a)\right)$</p>
+<p>求梯度，并转化为$\pi_{\theta}$下的期望</p>
+<p>$\nabla \mathcal{J}(\theta)=\mathbb{E}<em>{\pi</em>{\theta}}\left[\nabla \ln \pi(a | s, \theta) Q_{\pi}(s, a)\right]$</p>
+<p>剩下的就是梯度更新的问题了</p>
+<h4 id="REINFORCE"><a href="#REINFORCE" class="headerlink" title="REINFORCE"></a>REINFORCE</h4><p>使用蒙特卡洛的方法获得一系列轨迹，使用$A(s, a)=Q(s, a)-V(s)$来进行梯度更新<br>$\theta \leftarrow \theta+\alpha \gamma^{t} G_{t} \nabla \ln \pi\left(A_{t} | S_{t}, \theta\right)$</p>
+<h3 id="3-Actor-Critic：结合两部分"><a href="#3-Actor-Critic：结合两部分" class="headerlink" title="3. Actor-Critic：结合两部分"></a>3. Actor-Critic：结合两部分</h3><p>既更新策略期望，又更新值函数<br>$\theta \leftarrow \theta+\alpha_{\theta} Q(s, a ; w) \nabla_{\theta} \ln \pi(a | s ; \theta)$<br>$w \leftarrow w+\alpha_{w} G_{t: t+1} \nabla_{w} Q(s, a ; w)$</p>
+<h4 id="Asynchronous-Advantage-Actor-Critic-A3C"><a href="#Asynchronous-Advantage-Actor-Critic-A3C" class="headerlink" title="Asynchronous Advantage Actor-Critic (A3C)"></a>Asynchronous Advantage Actor-Critic (A3C)</h4><p>异步：多线程 优势：使用优势函数进行更新<br>$d \theta \leftarrow d \theta+\nabla_{\theta^{\prime}} \log \pi\left(a_{i} | s_{i} ; \theta^{\prime}\right)\left(R-V\left(s_{i} ; w^{\prime}\right)\right)$<br>$d w \leftarrow d w+\nabla_{w^{\prime}}\left(R-V\left(s_{i} ; w^{\prime}\right)\right)^{2}$<br>异步获得梯度，进行加和，同步更新</p>
+<p>阅读长篇英文博文请<a href="https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html" target="_blank" rel="noopener">点击这里</a></p>
 
       
     </div>
@@ -410,7 +416,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Vue/" rel="tag"># Vue</a>
+            <a href="/tags/Reinforcement-Learning/" rel="tag"># Reinforcement Learning</a>
           
         </div>
       
@@ -423,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/14/malloclab/" rel="next" title="CS APP malloclab">
-                <i class="fa fa-chevron-left"></i> CS APP malloclab
+              <a href="/2019/12/04/indent/" rel="next" title="Indent problem! Latex and Python">
+                <i class="fa fa-chevron-left"></i> Indent problem! Latex and Python
               </a>
             
           </div>
@@ -433,8 +439,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/23/Vue-router/" rel="prev" title="Vue项目router注意事项">
-                Vue项目router注意事项 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/12/21/Commonsence/" rel="prev" title="Commonsense Validation and Explanation">
+                Commonsense Validation and Explanation <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -574,7 +580,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#V-for"><span class="nav-number">1.</span> <span class="nav-text">V-for</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#v-for-响应的内容更新"><span class="nav-number">1.1.</span> <span class="nav-text">v-for 响应的内容更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#利用过滤创立新数组"><span class="nav-number">1.2.</span> <span class="nav-text">利用过滤创立新数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-for-与-v-if-的合并使用"><span class="nav-number">1.3.</span> <span class="nav-text">v-for 与 v-if 的合并使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#V-model"><span class="nav-number">2.</span> <span class="nav-text">V-model</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Value-Iteration"><span class="nav-number">1.</span> <span class="nav-text">1. Value Iteration</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Generalized-Policy-Iteration-GPI"><span class="nav-number">1.1.</span> <span class="nav-text">Generalized Policy Iteration (GPI)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Monte-Carlo-Methods"><span class="nav-number">1.2.</span> <span class="nav-text">Monte-Carlo Methods</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Temporal-Difference-Learning"><span class="nav-number">1.3.</span> <span class="nav-text">Temporal-Difference Learning:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SARSA-On-Policy-TD-control"><span class="nav-number">1.4.</span> <span class="nav-text">SARSA: On-Policy TD control</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Q-Learning-Off-policy-TD-control"><span class="nav-number">1.5.</span> <span class="nav-text">Q-Learning: Off-policy TD control</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Policy-Iteration"><span class="nav-number">2.</span> <span class="nav-text">2. Policy Iteration</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#REINFORCE"><span class="nav-number">2.1.</span> <span class="nav-text">REINFORCE</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Actor-Critic：结合两部分"><span class="nav-number">3.</span> <span class="nav-text">3. Actor-Critic：结合两部分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Asynchronous-Advantage-Actor-Critic-A3C"><span class="nav-number">3.1.</span> <span class="nav-text">Asynchronous Advantage Actor-Critic (A3C)</span></a></li></ol></li></ol></div>
             
 
           </div>
