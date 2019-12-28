@@ -1,514 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-
-    
   <url>
     <loc>https://dongfanker.github.io/2019/12/29/RL/</loc>
-    <lastmod>2019-12-28T17:29:41.974Z</lastmod>
-    <data>
-        <display>
-        <title>强化学习精要总结（基础）</title>
-        <pubTime>2019-12-28T16:00:00.000Z</pubTime>
-        
-        <tag>Reinforcement Learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="Reinforcement Learning" url="https://dongfanker.github.io/categories/Reinforcement-Learning/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-12-28</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/11/04/kneser-ney/</loc>
-    <lastmod>2019-12-28T16:54:38.835Z</lastmod>
-    <data>
-        <display>
-        <title>Good-Turing、Absolute、kneser-ney smooth</title>
-        <pubTime>2018-11-03T16:44:02.000Z</pubTime>
-        
-        <tag>smooth</tag>
-         
-        <tag>kneser-ney</tag>
-         
-         
-           
-             
-              <breadCrumb title="自然语言处理" url="https://dongfanker.github.io/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-12-28</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2019/12/04/encoder-decoder/</loc>
-    <lastmod>2019-12-28T13:37:56.963Z</lastmod>
-    <data>
-        <display>
-        <title>RNN 的 Dropout 参数建议</title>
-        <pubTime>2019-12-03T16:00:00.000Z</pubTime>
-        
-        <tag>RNN</tag>
-         
-        <tag>Dropout</tag>
-         
-         
-           
-             
-              <breadCrumb title="Trick" url="https://dongfanker.github.io/categories/Trick/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-12-28</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2019/12/27/doctor/</loc>
-    <lastmod>2019-12-27T06:00:34.272Z</lastmod>
-    <data>
-        <display>
-        <title>Top essays by scientists in 2019</title>
-        <pubTime>2019-12-26T16:00:00.000Z</pubTime>
-        
-        <tag>P.h.D.</tag>
-         
-         
-           
-             
-              <breadCrumb title="P.h.D. career" url="https://dongfanker.github.io/categories/P-h-D-career/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-12-27</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2019/12/04/indent/</loc>
-    <lastmod>2019-12-23T14:47:18.383Z</lastmod>
-    <data>
-        <display>
-        <title>Indent problem! Latex and Python</title>
-        <pubTime>2019-12-03T16:00:00.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Latex</tag>
-         
-         
-           
-             
-              <breadCrumb title="Trick" url="https://dongfanker.github.io/categories/Trick/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-12-23</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2019/12/21/Commonsence/</loc>
-    <lastmod>2019-12-23T14:06:52.336Z</lastmod>
-    <data>
-        <display>
-        <title>Commonsense Validation and Explanation</title>
-        <pubTime>2019-12-20T16:00:00.000Z</pubTime>
-        
-        <tag>AI</tag>
-         
-        <tag>Commonsense</tag>
-         
-         
-           
-             
-              <breadCrumb title="NLP" url="https://dongfanker.github.io/categories/NLP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
+    <lastmod>2019-12-23</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2019/04/27/spring/</loc>
-    <lastmod>2019-04-27T12:21:09.675Z</lastmod>
-    <data>
-        <display>
-        <title>Spring, Spring Boot, Restful, Docker</title>
-        <pubTime>2019-04-27T11:28:20.297Z</pubTime>
-        
-        <tag>Spring</tag>
-         
-        <tag>Spring Boot</tag>
-         
-         
-           
-             
-              <breadCrumb title="Spring" url="https://dongfanker.github.io/categories/Spring/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-04-27</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/11/08/tfbase/</loc>
-    <lastmod>2019-04-04T11:07:02.689Z</lastmod>
-    <data>
-        <display>
-        <title>Tensorflow 基本概念</title>
-        <pubTime>2018-11-07T16:44:02.000Z</pubTime>
-        
-        <tag>tensorflow</tag>
-         
-         
-           
-             
-              <breadCrumb title="深度学习" url="https://dongfanker.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-04-04</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/11/15/Matlab/</loc>
-    <lastmod>2018-11-15T16:59:46.528Z</lastmod>
-    <data>
-        <display>
-        <title>Matlab的使用笔记</title>
-        <pubTime>2018-11-14T16:44:02.000Z</pubTime>
-        
-        <tag>Matlab</tag>
-         
-         
-           
-             
-              <breadCrumb title="Matlab" url="https://dongfanker.github.io/categories/Matlab/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-11-15</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/11/09/tensorboard/</loc>
-    <lastmod>2018-11-11T15:00:34.281Z</lastmod>
-    <data>
-        <display>
-        <title>Tensorboard的使用</title>
-        <pubTime>2018-11-08T16:44:02.000Z</pubTime>
-        
-        <tag>tensorflow</tag>
-         
-        <tag>tensorboard</tag>
-         
-         
-           
-             
-              <breadCrumb title="深度学习" url="https://dongfanker.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-11-11</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/11/09/measure/</loc>
-    <lastmod>2018-11-09T04:42:00.654Z</lastmod>
-    <data>
-        <display>
-        <title>机器学习评价指标</title>
-        <pubTime>2018-11-08T16:44:02.000Z</pubTime>
-        
-        <tag>Machine Learing</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="https://dongfanker.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-11-09</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/11/07/cookbookString/</loc>
-    <lastmod>2018-11-07T04:29:39.169Z</lastmod>
-    <data>
-        <display>
-        <title>字符串和文本处理</title>
-        <pubTime>2018-11-06T16:44:02.000Z</pubTime>
-        
-        <tag>string process</tag>
-         
-         
-           
-             
-              <breadCrumb title="自然语言处理" url="https://dongfanker.github.io/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-11-07</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/11/04/trie/</loc>
-    <lastmod>2018-11-04T10:17:19.914Z</lastmod>
-    <data>
-        <display>
-        <title>Trie树</title>
-        <pubTime>2018-11-03T16:44:02.000Z</pubTime>
-        
-        <tag>Trie</tag>
-         
-         
-           
-             
-              <breadCrumb title="数据结构" url="https://dongfanker.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
+    <lastmod>2018-11-04</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/09/03/vue-bus/</loc>
-    <lastmod>2018-09-02T17:39:45.077Z</lastmod>
-    <data>
-        <display>
-        <title>Vue项目bus与vuex的使用</title>
-        <pubTime>2018-09-02T16:44:02.000Z</pubTime>
-        
-        <tag>Vue</tag>
-         
-        <tag>router</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue" url="https://dongfanker.github.io/categories/Vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-02</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/09/01/Vue-route-pamas/</loc>
-    <lastmod>2018-09-01T11:22:36.977Z</lastmod>
-    <data>
-        <display>
-        <title>Vue项目路由传参</title>
-        <pubTime>2018-09-01T07:44:02.000Z</pubTime>
-        
-        <tag>Vue</tag>
-         
-        <tag>router</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue" url="https://dongfanker.github.io/categories/Vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-01</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/08/31/dict_hr/</loc>
-    <lastmod>2018-08-31T07:42:49.571Z</lastmod>
-    <data>
-        <display>
-        <title>Hackerrank Dicts 解题记录</title>
-        <pubTime>2018-08-30T18:44:02.000Z</pubTime>
-        
-        <tag>hackerrank</tag>
-         
-         
-           
-             
-              <breadCrumb title="hackerrank" url="https://dongfanker.github.io/categories/hackerrank/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-31</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/08/30/list_hr/</loc>
-    <lastmod>2018-08-31T06:07:20.176Z</lastmod>
-    <data>
-        <display>
-        <title>Hackerrank Arrays 解题记录</title>
-        <pubTime>2018-08-30T03:44:02.000Z</pubTime>
-        
-        <tag>hackerrank</tag>
-         
-         
-           
-             
-              <breadCrumb title="hackerrank" url="https://dongfanker.github.io/categories/hackerrank/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-31</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/08/24/connectlb/</loc>
-    <lastmod>2018-08-30T11:36:36.354Z</lastmod>
-    <data>
-        <display>
-        <title>Vue、Loopback、mysql</title>
-        <pubTime>2018-08-24T03:44:02.000Z</pubTime>
-        
-        <tag>Vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue" url="https://dongfanker.github.io/categories/Vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-30</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/08/14/malloclab/</loc>
-    <lastmod>2018-08-30T11:26:45.427Z</lastmod>
-    <data>
-        <display>
-        <title>CS APP malloclab</title>
-        <pubTime>2018-08-14T05:58:02.000Z</pubTime>
-        
-        <tag>计算机系统</tag>
-         
-        <tag>ICS</tag>
-         
-        <tag>CS APP</tag>
-         
-        <tag>代理服务器</tag>
-         
-         
-           
-             
-              <breadCrumb title="ICS lab" url="https://dongfanker.github.io/categories/ICS-lab/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-30</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/08/23/Vue_component/</loc>
-    <lastmod>2018-08-23T10:54:57.144Z</lastmod>
-    <data>
-        <display>
-        <title>Vue组件的使用</title>
-        <pubTime>2018-08-23T09:24:02.000Z</pubTime>
-        
-        <tag>Vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue" url="https://dongfanker.github.io/categories/Vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-23</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/08/23/Vueform/</loc>
-    <lastmod>2018-08-23T09:01:20.612Z</lastmod>
-    <data>
-        <display>
-        <title>Vue项目v-for、v-model的使用</title>
-        <pubTime>2018-08-23T07:44:02.000Z</pubTime>
-        
-        <tag>Vue</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue" url="https://dongfanker.github.io/categories/Vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-23</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/08/23/Vue-router/</loc>
-    <lastmod>2018-08-23T08:21:43.355Z</lastmod>
-    <data>
-        <display>
-        <title>Vue项目router注意事项</title>
-        <pubTime>2018-08-23T07:44:02.000Z</pubTime>
-        
-        <tag>Vue</tag>
-         
-        <tag>router</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue" url="https://dongfanker.github.io/categories/Vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-23</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/08/14/proxylab/</loc>
-    <lastmod>2018-08-14T06:28:48.788Z</lastmod>
-    <data>
-        <display>
-        <title>CS APP proxylab</title>
-        <pubTime>2018-08-14T05:56:02.000Z</pubTime>
-        
-        <tag>计算机系统</tag>
-         
-        <tag>ICS</tag>
-         
-        <tag>CS APP</tag>
-         
-        <tag>代理服务器</tag>
-         
-         
-           
-             
-              <breadCrumb title="ICS lab" url="https://dongfanker.github.io/categories/ICS-lab/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-14</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2018/06/25/hello-world/</loc>
-    <lastmod>2018-08-14T06:11:57.474Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2018-06-25T09:55:01.868Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
+    <lastmod>2018-08-14</lastmod>
+  </url>
 </urlset>
