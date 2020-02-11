@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="东方客&#39;s Blog">
 <meta property="og:description" content="Short Note, the comparison and development of RL methods">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-28T17:51:07.380Z">
+<meta property="og:updated_time" content="2020-01-03T13:34:22.021Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="强化学习精要总结（基础）">
 <meta name="twitter:description" content="Short Note, the comparison and development of RL methods">
@@ -380,6 +380,7 @@
 
       
         <p>本博文假设基本的状态表示和动作表示都已经了解的情况下，对多个强化学习方法进行简要对比</p>
+<p>阅读长篇英文博文请<a href="https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html" target="_blank" rel="noopener">点击这里</a></p>
 <p>Major division: <strong>Value iteration</strong> and <strong>Policy iteration</strong></p>
 <h3 id="1-Value-Iteration"><a href="#1-Value-Iteration" class="headerlink" title="1. Value Iteration"></a>1. Value Iteration</h3><p>Dynamic Programming: when the model is fully known, it can be directly solved by Dynamic Programming.</p>
 <p>When the model is not solve, we need reinforcement learning.</p>
@@ -398,7 +399,6 @@
 <h4 id="REINFORCE"><a href="#REINFORCE" class="headerlink" title="REINFORCE"></a>REINFORCE</h4><p>使用蒙特卡洛的方法获得一系列轨迹，使用$A(s, a)=Q(s, a)-V(s)$来进行梯度更新<br>$\theta \leftarrow \theta+\alpha \gamma^{t} G_{t} \nabla \ln \pi\left(A_{t} | S_{t}, \theta\right)$</p>
 <h3 id="3-Actor-Critic：结合两部分"><a href="#3-Actor-Critic：结合两部分" class="headerlink" title="3. Actor-Critic：结合两部分"></a>3. Actor-Critic：结合两部分</h3><p>既更新策略期望，又更新值函数<br>$\theta \leftarrow \theta+\alpha_{\theta} Q(s, a ; w) \nabla_{\theta} \ln \pi(a | s ; \theta)$<br>$w \leftarrow w+\alpha_{w} G_{t: t+1} \nabla_{w} Q(s, a ; w)$</p>
 <h4 id="Asynchronous-Advantage-Actor-Critic-A3C"><a href="#Asynchronous-Advantage-Actor-Critic-A3C" class="headerlink" title="Asynchronous Advantage Actor-Critic (A3C)"></a>Asynchronous Advantage Actor-Critic (A3C)</h4><p>异步：多线程 优势：使用优势函数进行更新<br>$d \theta \leftarrow d \theta+\nabla_{\theta^{\prime}} \log \pi\left(a_{i} | s_{i} ; \theta^{\prime}\right)\left(R-V\left(s_{i} ; w^{\prime}\right)\right)$<br>$d w \leftarrow d w+\nabla_{w^{\prime}}\left(R-V\left(s_{i} ; w^{\prime}\right)\right)^{2}$<br>异步获得梯度，进行加和，同步更新</p>
-<p>阅读长篇英文博文请<a href="https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html" target="_blank" rel="noopener">点击这里</a></p>
 
       
     </div>
@@ -521,7 +521,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -543,7 +543,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -597,7 +597,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

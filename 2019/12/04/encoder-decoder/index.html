@@ -82,14 +82,14 @@
 <meta name="description" content="The selection of dropout rate for encoder-decoder mechanism">
 <meta name="keywords" content="RNN,Dropout">
 <meta property="og:type" content="article">
-<meta property="og:title" content="RNN 的 Dropout 参数建议">
+<meta property="og:title" content="Dropout of RNN, batch size, accumulation steps">
 <meta property="og:url" content="https://dongfanker.github.io/2019/12/04/encoder-decoder/index.html">
 <meta property="og:site_name" content="东方客&#39;s Blog">
 <meta property="og:description" content="The selection of dropout rate for encoder-decoder mechanism">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-28T13:37:56.963Z">
+<meta property="og:updated_time" content="2020-01-14T08:23:02.846Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RNN 的 Dropout 参数建议">
+<meta name="twitter:title" content="Dropout of RNN, batch size, accumulation steps">
 <meta name="twitter:description" content="The selection of dropout rate for encoder-decoder mechanism">
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>RNN 的 Dropout 参数建议 | 东方客's Blog</title>
+  <title>Dropout of RNN, batch size, accumulation steps | 东方客's Blog</title>
   
 
 
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">RNN 的 Dropout 参数建议</h1>
+          <h1 class="post-title" itemprop="name headline">Dropout of RNN, batch size, accumulation steps</h1>
         
 
         <div class="post-meta">
@@ -344,7 +344,7 @@
 
           
           
-             <span id="/2019/12/04/encoder-decoder/" class="leancloud_visitors" data-flag-title="RNN 的 Dropout 参数建议">
+             <span id="/2019/12/04/encoder-decoder/" class="leancloud_visitors" data-flag-title="Dropout of RNN, batch size, accumulation steps">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -382,6 +382,8 @@
         <h3 id="Dropout"><a href="#Dropout" class="headerlink" title="Dropout"></a>Dropout</h3><p>Srivastava et al. (2014) applied dropout to feed forward neural network’s and RBM’s and noted a probability of dropout around <strong>0.5 for hidden units and 0.2 for inputs</strong> worked well for a variety of tasks.</p>
 <p>Reference: <a href="https://medium.com/@bingobee01/a-review-of-dropout-as-applied-to-rnns-72e79ecd5b7b" target="_blank" rel="noopener">A review of Dropout as applied to RNNs</a></p>
 <p>When I apply the 0.5 for hidden units and 0.2 for inputs, it works well. But it is not the case in decoder. <strong>In decoder, I would suggest not to use dropout</strong>.</p>
+<h3 id="Batch-Size"><a href="#Batch-Size" class="headerlink" title="Batch Size"></a>Batch Size</h3><p>Suggest &lt;=32， See <a href="https://www.cs.cmu.edu/~muli/file/minibatch_sgd.pdf" target="_blank" rel="noopener">Efficient Mini-batch Training for Stochastic Optimization</a> and <a href="https://svail.github.io/rnn_perf/" target="_blank" rel="noopener">this RNN study</a></p>
+<h3 id="Accumulation-steps"><a href="#Accumulation-steps" class="headerlink" title="Accumulation_steps"></a>Accumulation_steps</h3><p>Have the same function like batch size, but it can be use when Graphics memory is not enough.</p>
 
       
     </div>
@@ -510,7 +512,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -532,7 +534,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -565,7 +567,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Dropout"><span class="nav-number">1.</span> <span class="nav-text">Dropout</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Dropout"><span class="nav-number">1.</span> <span class="nav-text">Dropout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Batch-Size"><span class="nav-number">2.</span> <span class="nav-text">Batch Size</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Accumulation-steps"><span class="nav-number">3.</span> <span class="nav-text">Accumulation_steps</span></a></li></ol></div>
             
 
           </div>
@@ -586,7 +588,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
