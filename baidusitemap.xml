@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://dongfanker.github.io/2020/02/11/RLSeq2Seq/</loc>
+    <lastmod>2020-02-19</lastmod>
+  </url>  <url>
     <loc>https://dongfanker.github.io/2020/02/19/NLP_toolkit/</loc>
     <lastmod>2020-02-19</lastmod>
   </url>  <url>
@@ -9,9 +12,6 @@
   </url>  <url>
     <loc>https://dongfanker.github.io/2019/12/04/encoder-decoder/</loc>
     <lastmod>2020-01-14</lastmod>
-  </url>  <url>
-    <loc>https://dongfanker.github.io/2019/01/11/RLSeq2Seq/</loc>
-    <lastmod>2020-01-12</lastmod>
   </url>  <url>
     <loc>https://dongfanker.github.io/2019/12/29/RL/</loc>
     <lastmod>2020-01-03</lastmod>
